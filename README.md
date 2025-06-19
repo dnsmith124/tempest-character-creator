@@ -39,8 +39,7 @@ A modern, interactive character creation tool for the Tempest tabletop roleplayi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tempest-2.git
-cd tempest-2
+git clone https://github.com/dnsmith124/tempest-character-creator.git
 ```
 
 2. Install dependencies:
