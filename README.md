@@ -1,9 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tempest Character Creator
 
-## Getting Started
+A modern, interactive character creation tool for the Tempest tabletop roleplaying game. Built with Next.js and React, this application provides an intuitive step-by-step character creation process with real-time stat calculations and character management.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15.3.3-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.9-38B2AC?style=for-the-badge&logo=tailwind-css)
 
+## ✨ Features
+
+- **Multi-Stage Character Creation**: Guided 8-stage character creation process
+- **Real-Time Stat Calculations**: Automatic computation of derived stats based on attributes and ancestry
+- **Character Management**: Save, load, and manage multiple characters locally
+- **Rich Data Integration**: Comprehensive ancestries, backgrounds, skills, abilities, and spells
+- **Responsive Design**: Modern UI that works on desktop and mobile devices
+- **Local Storage**: Characters persist between sessions using browser storage
+- **Character Notes**: Add and save notes for each character
+
+## 🎯 Character Creation Stages
+
+1. **Attributes** - Assign STR, AGL, MND, VIG using standard or random methods
+2. **Ancestry** - Choose from 10 unique ancestries (Azure Elf, Amber Elf, Dwarf, Poliwok, Felesian, Goliath, Gnome, Human, Pluma, Orc)
+3. **Background** - Select from 40+ backgrounds (Acrobat, Alchemist, Aristocrat, etc.)
+4. **Skills** - Choose 5 skills including your background's automatic skill
+5. **Kit** - Select starting equipment and gear
+6. **Abilities** - Choose from martial, nimble, musical, deadeye, and passive abilities
+7. **Traits** - Select character traits and personality
+8. **Summary** - Review and finalize your character
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/tempest-2.git
+cd tempest-2
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
@@ -14,23 +65,97 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **State Management**: React hooks with localStorage persistence
+- **Build Tool**: Turbopack for fast development builds
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+tempest/
+├── app/
+│   ├── components/          # React components
+│   │   ├── stages/         # Character creation stage components
+│   │   └── ...             # Shared components
+│   ├── data/               # Game data JSON files
+│   │   ├── ancestries.json # Character ancestries
+│   │   ├── backgrounds.json # Character backgrounds
+│   │   ├── skills.json     # Available skills
+│   │   ├── abilities-*.json # Different ability types
+│   │   ├── spells-*.json   # Different spell schools
+│   │   └── ...             # Other game data
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Main page
+├── public/                 # Static assets
+└── ...                     # Configuration files
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎮 Game Data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application includes comprehensive game data for the Tempest RPG:
 
-## Deploy on Vercel
+- **10 Ancestries** with unique abilities and stat bonuses
+- **40+ Backgrounds** with associated skills and starting benefits
+- **Multiple Ability Types**: Martial, Nimble, Musical, Deadeye, and Passive
+- **5 Spell Schools**: Arcane, Druidic, Fleuromancy, Holy, and Shadow
+- **Extensive Skill System** with various categories
+- **Character Traits** for personality customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Key Components
+
+- `CharacterCreationForm.tsx` - Main form orchestrator
+- `stages/` - Individual stage components for each creation step
+- `CurrentSelection.tsx` - Shows current character progress
+- `SelectedCharacterDisplay.tsx` - Character viewer and manager
+
+## 🎨 Customization
+
+The application is designed to be easily customizable:
+
+- **Game Data**: Modify JSON files in `app/data/` to add new ancestries, backgrounds, etc.
+- **Styling**: Uses Tailwind CSS for easy theme customization
+- **Components**: Modular design allows easy addition of new features
+
+## 📱 Browser Support
+
+- Chrome/Chromium (recommended)
+- Firefox
+- Safari
+- Edge
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built for the Tempest tabletop roleplaying game
+- Inspired by modern character creation tools
+- Uses Next.js and React for optimal performance and developer experience
+
+---
+
+**Note**: This is a character creation tool for the Tempest RPG. For game rules and mechanics, please refer to the official Tempest rulebook.
