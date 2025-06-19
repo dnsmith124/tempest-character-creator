@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Azure Elf",
+    "effect": "+1 MND",
+    "ability": "Precursor's Guidance: as a cursed azure elf you are denied the physical immortality of your amber elf cousins, though your soul remains undying. You will gradually regain memories from your soul's last incarnation, a being known as your precursor. These may take the form of additional skill proficiencies, memories relevant to a current quest, knowledge of the past, or some other information determined by the DM. Generally these are unlocked either upon level up, or during a narratively relevant event. (example: while exploring the tomb of an ancient cult, the PC receives a memory from their precursor, detailing their involvement in a different cult that worships the same god. The PC then gains advantage on Religion checks related to that god)"
+  },
+  {
+    "name": "Amber Elf",
+    "effect": "+2 HP",
+    "ability": "Immortal Blood: your longevity grants you more time to invest in yourself. You may either select an additional skill proficiency, or start with one of your skill proficiencies at 2 instead of 1. You are also immune to death by old age and cannot contract any diseases."
+  },
+  {
+    "name": "Dwarf",
+    "effect": "+2 Armor",
+    "ability": "Stoneskin: gain advantage on checks and contests relating to poison and acid, and you are immune to the Poisoned status effect."
+  },
+  {
+    "name": "Poliwok",
+    "effect": "+1 AGL",
+    "ability": "Swampwalker: you are immune to the Root status effect. You also may choose to not eat on the first day of any journey without incurring any penalty (must not have begun the journey with the Hungry status effect)."
+  },
+  {
+    "name": "Felesian",
+    "effect": "+1 STR",
+    "ability": "Feline Rage: once per day you may enter into a rage, granting advantage on your next attack and on Brawn(STR) checks for one turn (~10 min). You also gain disadvantage on Reflex(AGL) checks for the duration."
+  },
+  {
+    "name": "Goliath",
+    "effect": "+2 Armor",
+    "ability": "Imposing Stature: your great size grants you advantage on all Brawn(STR) checks, but disadvantage on all conversational skill checks (except Intimidation)."
+  },
+  {
+    "name": "Gnome",
+    "effect": "+1 Initiative",
+    "ability": "Supreme Fascination: one of your starting skill proficiencies may begin with a value of 3 rather than 1."
+  },
+  {
+    "name": "Human",
+    "effect": "+1 Memory",
+    "ability": "Quick Thinker: gain +1 Memory and one additional skill proficiency of the conversational type."
+  },
+  {
+    "name": "Pluma",
+    "effect": "Resistant to arcane damage",
+    "ability": "Avian Glide: you are able to leap from tall places and glide. When gliding you travel forward at a rate of 5ft per 5ft descended (may not be carrying more than your body weight)"
+  },
+  {
+    "name": "Orc",
+    "effect": "+1 VIG",
+    "ability": "Adrenaline Rush: once per day when damage would reduce you 0 HP, you are instead reduced to 1 HP and may immediately take an action (action and movement)."
+  }
+] 

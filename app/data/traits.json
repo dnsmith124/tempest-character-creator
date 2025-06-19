@@ -1,0 +1,32 @@
+{
+  "positive": [
+    { "name": "Kind-hearted", "description": "Always willing to help others and show compassion." },
+    { "name": "Brave", "description": "Willing to face danger and take risks for a good cause." },
+    { "name": "Generous", "description": "Willing to share resources and help others without expecting anything in return." },
+    { "name": "Loyal", "description": "Faithful and devoted to friends, family, and causes." },
+    { "name": "Honest", "description": "Always tells the truth and maintains integrity." },
+    { "name": "Empathetic", "description": "Able to understand and share the feelings of others." },
+    { "name": "Patient", "description": "Able to wait calmly and endure difficult situations without frustration." },
+    { "name": "Optimistic", "description": "Always sees the positive side of things and expects good outcomes." },
+    { "name": "Resourceful", "description": "Finds quick and clever ways to overcome difficulties." },
+    { "name": "Dependable", "description": "Can be relied upon to fulfill responsibilities and promises." },
+    { "name": "Resilient", "description": "Able to recover quickly from setbacks and maintain a positive attitude." },
+    { "name": "Courageous", "description": "Shows bravery and strength in the face of adversity." },
+    { "name": "Considerate", "description": "Always mindful of others' needs and feelings, acting with kindness." }
+  ],
+  "negative": [
+    { "name": "Greedy", "description": "Always wanting more than one needs, often at the expense of others." },
+    { "name": "Selfish", "description": "Concerned primarily with one's own needs and desires, often ignoring others." },
+    { "name": "Craven", "description": "Lacks courage and avoids taking risks or facing danger." },
+    { "name": "Deceitful", "description": "Frequently lies and manipulates others for personal gain." },
+    { "name": "Arrogant", "description": "Has an inflated sense of self-importance and looks down on others." },
+    { "name": "Impatient", "description": "Easily frustrated by delays or difficulties, often leading to rash actions." },
+    { "name": "Vindictive", "description": "Holds grudges and seeks revenge for perceived wrongs." },
+    { "name": "Stubborn", "description": "Unwilling to change opinions or adapt to new situations, often to their detriment." },
+    { "name": "Petty", "description": "Concerned with trivial matters and inclined to hold grudges over insignificant issues." },
+    { "name": "Jealous", "description": "Resentful of others' achievements or possessions, leading to feelings of envy." },
+    { "name": "Miserly", "description": "Reluctant to spend money or share resources, often excessively frugal." },
+    { "name": "Gossipy", "description": "Frequently engages in spreading rumors or talking about others behind their backs." },
+    { "name": "Manipulative", "description": "Skilled at influencing others for personal gain, often using deceitful or underhanded tactics." }
+  ]
+} 

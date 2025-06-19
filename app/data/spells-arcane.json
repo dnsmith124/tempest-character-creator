@@ -1,0 +1,412 @@
+{
+  "spells": [
+    {
+      "tier": 1,
+      "name": "Scorch",
+      "description": "A burst of flame erupts from your hands, engulfing an adjacent tile. Deal 1d8 fire damage per MND, and roll a DC15 Reflex(AGL) check. On fail, take on the Burned (1) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Fan of Flames",
+      "description": "Project cone of flame 3 tiles wide in front of you. It deals 1d4 fire damage per MND to all creatures caught within. Roll a DC15 Reflex(AGL) check. On fail, take on the Burned (1) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Frostbolt",
+      "description": "A shard of ice flies from your hand, targeting a single tile within 8 tiles. Deal 1d6 frost damage per MND to the target. Roll a DC15 Reflex(AGL) check. On fail, take on the Frozen status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Frost Nova",
+      "description": "A burst of cold energy radiates from you, affecting all adjacent tiles. Deal 1d4 ice damage per MND to all creatures in those tiles. Roll a DC15 Reflex(AGL) check. On fail, take on the Frozen status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Arcane Lance",
+      "description": "A focused beam of arcane energy lances toward a target within 10 tiles. It deals 1d4 arcane damage per MND to the target.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Aetheric Redirection",
+      "description": "Bend time to warp a projectile midair. Redirect a ranged or spell attack (not area-based) targeting you or an ally within 5 tiles to a new target.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Spectral Grasp",
+      "description": "Summon a mage hand to clutch at a target within 6 tiles. The hand deals 1d4 arcane damage per MND and applies the Hobbled condition to the target if it fails on an AGL contest against your MND.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Crystalline Missles",
+      "description": "Three bolts of pure arcane energy shoot from your fingertips, targeting up to 3 tiles within 8 tiles. Deal 1d4 arcane damage per MND to the target(s).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Temporal Displacement",
+      "description": "Manipulate time to teleport a creature within 8 tiles to another unoccupied tile within 8 tiles. The target performs a Reflex(AGL) contest against your MND. If you succeed, you teleport the target. If you fail you do not take exhaustion.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Incinerate",
+      "description": "Choose a number of creatures you can see within 6 tiles equal to your MND. These creatures all take on the Burned (MND) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Fireball",
+      "description": "A blazing orb of fire shoots from your hands, exploding upon impact. Target a tile within 8 tiles. Deal 1d6 fire damage per MND to the target and all adjacent tiles. Roll a DC15 Reflex(AGL) check. On fail, take on the Burned (2) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Frozen Prison",
+      "description": "Form a cage of frost around a creature. Choose a target within 6 tiles. It makes an AGL contest against your WIN. On fail, they take on the Frozen (MND) status and take 1d4 ice damage per MND. If you lose the contest, take on the Frozen (1) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Frost Wall",
+      "description": "Choose a tile within 6 tiles. Raise a wall of ice 3 tiles long centered on that tile. The wall can be arranged horizontally, vertically, or diagonally, and functions as full cover. It cannot be destroyed, but at the end of the combat it melts away.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Chronoflux",
+      "description": "Choose a 2x2 tile area within 8 tiles. Any creatures that start their turn within that area have their MVMT doubled. The effect lasts until the end of your next turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Glacial Spike",
+      "description": "You summon and launch a massive spike of ice at a target within 8 tiles. Deal 1d8 frost damage per MND to the target and have it roll a Brawn(STR) contest against your MND. If you succeed, it is knocked back 2 tiles. Roll a DC15 Reflex(AGL) check. On fail, take on the Frozen status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Blizzard",
+      "description": "A storm of ice and snow swirls around a target tile within 8 tiles. Deal 1d6 ice damage per MND to the target and all adjacent tiles. Roll a DC15 Reflex(AGL) check. On fail, take on the Frozen status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Crystalline Shield",
+      "description": "A protective barrier of arcane energy surrounds you. Gain armor or barrier equal to half of your MND. Any creature that attacks in melee you must roll a DC15 Reflex(AGL) check. On fail, the attacker takes on the Weaken (1) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Mana Bomb",
+      "description": "Choose a target within 6 tiles. Infuse it with a mass of unstable arcane energy. At the start of the target's next turn it explodes for 1d6 arcane damage per MND, dealing damage to itself and any creatures in adjacent tiles.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Ice Elemental",
+      "description": "Summon forth a giant ice elemental. It has HP and Armor and MVMT equal to your MND, and can perform a melee attack that deals 1d8 frost damage. It acts on your turn and remains until it's destroyed or the combat ends.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Temporal Anomaly",
+      "description": "Take on 1 point of exhaustion to phase through time, allowing you to perform two actions on your current turn. (This ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Meteor Storm",
+      "description": "Choose up to 6 targets within 8 tiles. You summon a meteor that slams into them, dealing 1d8 fire damage per MND. Roll a DC15 MND check. On fail, a rogue meteor slams into you as well.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Mirror Image",
+      "description": "Create 2 additional copies of yourself from different phases in time. When you would take damage from an attack one of the copies absorbs the damage instead, then dissolves into arcane mist.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Mage Light",
+      "description": "Create a ball of weak arcane energy that radiates light in a 20ft radius. It follows you, hovering just above your shoulder for 6 turns or until dismissed. You may also direct the ball to remain at a fixed point of your choosing within 100ft.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Mage Hand",
+      "description": "A spectral hand appears at a point you choose within 40ft. The hand lasts for 10 minutes or until you dismiss it, and can perform any trivial action. It cannot attack.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Minor Illusion",
+      "description": "Create a sound or visual illusion that originates at a point within 60ft. The sound can be as loud as a yell, and the illusion can be as large as a humanoid. The illusion will remain for 10 minutes or until dismissed.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Alarm",
+      "description": "You touch an object (or an area of an object) no larger than 10x10 feet. For the next 24 hours if any creature touches or passes within 10 feet of the object, you are magically notified of their presence. A blurry image of the creature appears in your mind, allowing you to recognize the creature type (humanoid, draconid, etc) but not the specific identity of the creature.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Charm Person",
+      "description": "You charm a creature with which you can communicate who is your level or lower. Gain advantage on all conversational skill checks with that creature for 24 hours.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Feather Fall",
+      "description": "You touch a creature and embue them with magical weighlessness, preventing them from taking any falling damage for 8 hours.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Arcane Lock",
+      "description": "Lock an object or doorway with arcane energy. Requires a DC 20 Arcane or Strength check to break. Lasts 24 hours.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Silent Witness",
+      "description": "You enchant a fixed point (object, wall, doorway, etc.) within 30ft to record all visible activity it can \"see\" in a 90-degree arc over the next hour. The recording captures clear visual images but no sound. At any point during the next 24 hours, you may touch the enchanted point to replay the visual sequence in your mind. Only you can see it.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Fly",
+      "description": "You touch a creature and arcane wings sprout from their back, granting them the ability to fly for 10 minutes per exhaustion spent. The cost of this spell varies based on how much exhaustion you choose to spend.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Telepathic Link",
+      "description": "You and one target can communicate telepathically over any distance for 1 hour.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Counterspell",
+      "description": "As a reaction, prevent a creature within 6 tiles from casting a single spell of any type.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Dispel Magic",
+      "description": "Perform an MND contest against a creature or object you can see. If you succeed, a magical effect of your choice is nullified on the target. If the target is an enchanted object, the DC is 10 + level of the wielder.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Staff", "Wand"]
+      }
+    }
+  ]
+} 

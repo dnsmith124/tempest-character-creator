@@ -1,0 +1,231 @@
+{
+  "abilities": [
+    {
+      "tier": 1,
+      "name": "Shield Bash",
+      "description": "Slam your shield into a creature within melee range, dealing 1d4 damage and possibly stunning it. The affected creature rolls a VIG contest against your STR. If you succeed the target takes on the Stunned (1) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 1
+        },
+        "equipment": ["Shield"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Rallying Cry",
+      "description": "Let out a brave rallying cry that bolsters all allies in a 6 tile radius. Affected allies gain 1d4 + VIG temporary HP (roll for each ally).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "VIG": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Cleave",
+      "description": "Sweep your 2H weapon in a wide arc, striking up to 3 foes in front of you with a basic weapon attack.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 1
+        },
+        "equipment": ["2H Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Retaliate",
+      "description": "Store up your rage, preparing to receive a powerful blow. After using this ability the next melee attack you receive has its damage cut in half (after applying your armor), and you may retaliate against the creature who attacked you with a basic melee weapon attack of your own.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Taunt",
+      "description": "Shout a taunting insult at a target within 6 tiles. It rolls a MND contest against you, and you roll with advantage. If you succeed the target takes on the Taunted (MND) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Shield Wall",
+      "description": "All adjacent allies receive +1 armor for as long as they remain adjacent to you. Remains active until the end of the current combat.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 1
+        },
+        "equipment": ["Shield"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Rally",
+      "description": "Beckon yourself to fight on and overcome the pain. Regain 1d4 + VIG HP. This ability does not consume your action, and can only be performed once per turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "VIG": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Hardy",
+      "description": "(Passive) Gain 1 armor per VIG.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Blood Rage",
+      "description": "(Passive) When you are below 1/2 health, you roll all melee attacks with advantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Whirlwind",
+      "description": "You become a whirlwind of pain, swinging your 2H weapon in a wide arc around yourself. Roll a basic weapon attack against all adjacent creatures.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 3
+        },
+        "equipment": ["2-handed melee weapon"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Charge",
+      "description": "Dash in a straight line to a creature within 4 spaces, then perform a basic weapon attack. If your attack deals damage after applying the target's armor, they are knocked back one space. If the space behind them is occupied or inaccessible, they take 1d4 damage instead.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 2,
+          "AGL": 2
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Flanking Strike",
+      "description": "If you and an ally are both adjacent to the same enemy, use this ability to perform a basic melee weapon attack on that enemy. Your attack deals one extra die of damage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 1,
+          "AGL": 2
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Execute",
+      "description": "Choose a creature within melee range. If that creature has 1/2 of its max HP or less, whenever you perform a basic melee attack against it you may spend 1 exhaustion to perform a second melee attack.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Defensive Stance",
+      "description": "Sacrifice your ability to deal damage in order to become a defensive powerhouse. All enemies who attack you roll damage with disadvantage, but you also roll your melee attacks with disadvantage. You may switch into and out of this stance without consuming your action, but may only switch once per turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 5
+        },
+        "equipment": ["Shield"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Reckless Stance",
+      "description": "Enter into a barbarous stance, sacrificing defense for all out fury. All melee attacks you make roll damage with advantage, but all creatures who attack you in melee also roll damage with advantage. You may switch into and out of this stance without consuming your action, but may only switch once per turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Battle Shout",
+      "description": "Bellow a battle shout that terrifies all foes within 2 tiles of you. Roll an Intimidation (STR) contest against your foes' VIG. The enemies roll as a group based on the enemy with the highest VIG. If you succeed all affected enemies take 1 extra damage from all sources until the end of the combat. (This ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 5
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Boomerang",
+      "description": "Toss your weapon in a straight line 3 tiles long. It returns to your hand, dealing damage to all creatures in its path. Roll two basic weapon attacks against each creature in its path.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Berserker's Fury",
+      "description": "Enter into a barbarous rage, making yourself immune to all damage until your next turn. If you've already used this ability in combat, roll a DC12 MND check. On fail you enter a blinding rage and move to and attack the nearest ally.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Battle Chain",
+      "description": "Throw a heavy steel chain that wraps around the legs of an enemy within 6 tiles. Perform a STR contest against the enemy. If you succeed, the enemy is pulled to an empty space adjacent to you and is knocked prone. Using this ability does not consume your action.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Overwhelming Odds",
+      "description": "The presence of countless enemies only hardens your resolve. For each enemy left alive in the current combat, gain 1 point of temporary armor.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "STR": 7
+        }
+      }
+    }
+  ]
+} 

@@ -1,0 +1,244 @@
+{
+  "abilities": [
+    {
+      "tier": 1,
+      "name": "Song of Convalescence",
+      "description": "A song of recuperation. At the start of each ally's turn, they restore 1 HP.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Song of Bolstering",
+      "description": "A ballad of a heroic character overcoming impossible odds. Each ally receives temporary armor equal to your MND.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Song of Swiftness",
+      "description": "A ballad telling the story of a legendary thief. Each ally receives 1d4 additional MVMT.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Befuddling Tune",
+      "description": "A disorienting melody that scrambles the thoughts of the listener. Select a 2x2 tile within 6 tiles. All creatures within the targeted area performa a MND contest against you. If you succeed, the target takes on the Confused status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Inquisitor's Tune",
+      "description": "All magical damage dealt by creatures in the current combat is reduced by 1.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Taunting Tune",
+      "description": "A creature within 6 tiles of you rolls a MND contest with disadvantage. On fail they take on the Taunted condition.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Song of Vengeance",
+      "description": "A song of bitter rage and woe. +1 to all damage rolls made by allies.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Song of Rest",
+      "description": "A soothing lullaby that eases the soul. Each ally restores 1 exhaustion.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Song of Victory",
+      "description": "All party members gain 1 additional merit if the last enemy is slain while this song is active.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Lethargic Tune",
+      "description": "A slow, mesmerizing melody that induces sleep. All creatures in a 5x5 tile must perform a VIG contest against your MND. If a target fails, they take on the Sleep condition.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Charming Tune",
+      "description": "A captivating melody that entrances a listener. Choose a creature within 6 tiles. That creature rolls a MND contest against you. If you succeed, the target takes on the Charmed status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Cacophonous Tune",
+      "description": "A chaotic and disruptive melody that hinders magic. Select a 3x3 tile within 6 tiles. Any creatures that remain within the targeted area take on the Silenced condition.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Song of Recovery",
+      "description": "All allies within 5 tiles may roll one of their recovery dice and heal for the amount (this does not expend one of that character's recovery dice)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Song of Severity",
+      "description": "A fierce melody recounting tales of legendary warriors. All allies roll their next basic attack, spell, or ability with advantage. On your next turn, this song's effect fades away.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Mocking Tune",
+      "description": "Select up to 2 creatures within 6 tiles. The creatures roll a WIL contest against you. If either fails it takes 2d8 arcane damage, if it succeeds it takes half damage. Regardless it automatically fails its next check or contest.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Maddening Tune",
+      "description": "Target up to 2 creatures within 6 tiles. That creature and all adjacent ones must roll a MND contest against you. On failure, they move 1d4 tiles in a random direction on their next turn instead of choosing their movement. They may still perform an action, but their movement is consumed.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Song of Resilience",
+      "description": "All allies in the current combat gain resistance against all forms of damage until the end of your next turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Song of Fury",
+      "description": "All allies in the current combat roll their damage with an additional die (1d6 becomes 2d6, etc)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Conductor's Tune",
+      "description": "Choose up to 2 enemies you can see. They each roll a MND contest against you. On a fail you gain control of their movement (but not their action). At the end of each of their turns they may roll another MND contest to regain control.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["instrument"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Luckless Tune",
+      "description": "All enemies in the current combat roll their next check or contest with disadvantage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["instrument"]
+      }
+    }
+  ]
+} 

@@ -1,0 +1,230 @@
+{
+  "abilities": [
+    {
+      "tier": 1,
+      "name": "Improved Backstab",
+      "description": "Passive: When you backstab, roll an additional die of damage instead of rolling with advantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Deft Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Blinding Dust",
+      "description": "Choose a creature in melee range. You toss a handful of blinding dust in its eyes, potentially disorienting it. Roll a Reflex (AGL) contest against the creature. If you win, it gains the Blinded status. At the end of each of its turns it may make a DC 12 Reflex (AGL) check.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Tendon Slice",
+      "description": "Choose a creature in melee range. Perform a basic melee attack against them and inflict the Hobbled status on them for the rest of the combat.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Deft Melee Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Smoke Bomb",
+      "description": "Choose a 3x3 tile within 6 tiles. Obscure that area of the battlefield, inflicting the Blind status to all creatures within.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Riposte",
+      "description": "The next melee attack you receive does no damage, instead reflecting the damage back onto the attacker.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Envenom",
+      "description": "Apply a poison in your inventory to one of your equipped weapons, then you may perform a basic attack against a creature within your weapon's RANGE.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Poison"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Fan of Knives",
+      "description": "You loose a handful of throwing knives in all directions, hitting all creatures adjacent to you for 1d4 damage (roll for each).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Deft Weapon"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Mutilate",
+      "description": "Perform a basic weapon attack against a creature in melee range, then inflict the Bleed (LVL) status effect on them.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Deft Weapon/Bow/Crossbow"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Sprint",
+      "description": "Double your MVMT value for the duration of your current turn. (This ability does not consume your action for this turn)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Mark for Death",
+      "description": "You mark a target for assassination. Mark one creature you can see. Until the end of the combat your attacks against them roll with advantage and ignore any damage resistance they have. You may only have one Death Mark active at a time.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Evasion",
+      "description": "As a reaction, prevent all damage from a single incoming attack, spell, or ability. You may wait to use this until after the incoming damage has been rolled.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Shadowstep",
+      "description": "Choose a creature within 6 tiles of you that has an unoccupied and unobstructed tile behind them. Teleport to the tile behind the creature and perform a basic melee attack with advantage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Deft Weapon"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Expose Armor",
+      "description": "Choose a creature in melee range. You exploit a weakness in their armor, such as cutting a vulnerable strap or bashing a buckle until it breaks. Inflict the Sunder status with a value of 1d4 for the remainder of the combat.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Kidney Shot",
+      "description": "Choose a creature in melee range. Roll a VIG contest against your Reflex (AGL). If you succeed, the creature is stunned until the end of its next turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Duelist's Stance",
+      "description": "All creatures who attack you roll their damage with disadvantage. Lasts for the duration of the combat.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Dodge",
+      "description": "Trade your MVMT this round to have the next attack against you roll damage with disadvantage. (does not consume your action)",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Invisibility Powder",
+      "description": "Throw a charge of invisibility powder at your feet, rendering yourself entirely invisible. You may move around the battlefield without incurring any attacks of opportunity. You remain invisible until you perform an action.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Impossible Reflexes",
+      "description": "Use as a reaction when an attack, trap, or spell targets you. You take no damage, ignore all side effects, and may move 2 tiles. You may use this after seeing the result of the triggering effect.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Shadow Snare",
+      "description": "Target a creature within 4 tiles. Their shadow comes to life and grapples them. They must roll a Reflex (AGL) contest against you. On a failure, they take 2d8 shadow damage and take on the Silence and Root statuses for 1d4 turns. You may move them 1 tile per turn while they're bound.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        }
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Doppleganger",
+      "description": "You form a life-sized version of yourself from coalesced shadow on an adjacent tile. Your shadow acts as a second version of yourself: it has the same stats and can perform any actions that you can. Any creatures that target it with an attack must roll an AGL contest against you. If the attacker succeeds, the shadow dissipates.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        }
+      }
+    }
+  ]
+} 

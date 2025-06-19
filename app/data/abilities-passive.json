@@ -1,0 +1,601 @@
+{
+  "abilities": [
+    {
+      "category": "Awareness",
+      "name": "Keen Eye",
+      "description": "Auto-detect traps/mechanisms in searched objects. Perception checks to find them have advantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        }
+      }
+    },
+    {
+      "category": "Combat Support",
+      "name": "Iron Grip",
+      "description": "Cannot be disarmed unless Stunned or Petrified.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 2
+        }
+      }
+    },
+    {
+      "category": "Combat Support",
+      "name": "Surefooted",
+      "description": "Advantage on resisting forced movement or being knocked Prone.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "STR": 3
+        }
+      }
+    },
+    {
+      "category": "Companions",
+      "name": "Mechanical Companion 1",
+      "description": "Create a mechanical companion.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "skills": {
+          "Tinkerer": 1
+        }
+      }
+    },
+    {
+      "category": "Companions",
+      "name": "Mechanical Companion 2",
+      "description": "Improve your mechanical companion. This ability replaces Mechanical Companion 1.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "skills": {
+          "Tinkerer": 5
+        }
+      }
+    },
+    {
+      "category": "Companions",
+      "name": "Mechanical Companion 3",
+      "description": "Further improve your mechanical companion. This ability replaces Mechanical Companion 2.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 6
+        },
+        "skills": {
+          "Tinkerer": 8
+        }
+      }
+    },
+    {
+      "category": "Companions",
+      "name": "Mount Whisperer",
+      "description": "You automatically succeed on checks to tame a mount, and once per combat when your mount falls to 0HP, it may instead remain at 1HP.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Animal Husbandry": 1
+        }
+      }
+    },
+    {
+      "category": "Crafting",
+      "name": "Frugal Crafter",
+      "description": "On a failed crafting check, roll a d6; on 5–6, salvage all materials.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Crafting": 1
+        }
+      }
+    },
+    {
+      "category": "Crafting",
+      "name": "Jury-rigger",
+      "description": "Once per day repair a broken item temporarily for 1 combat.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Tinkering": 2,
+          "Smithing": 2
+        }
+      }
+    },
+    {
+      "category": "Defense",
+      "name": "Ritual Fortitude",
+      "description": "Start the day with barrier equal to level if full HP & no exhaustion.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        }
+      }
+    },
+    {
+      "category": "Defense",
+      "name": "Caster's Reflex",
+      "description": "If you cast a spell during your last turn, when attacked you may take 1 exhaustion to dodge that attack, avoiding all damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 2
+        }
+      }
+    },
+    {
+      "category": "Defense",
+      "name": "Guardian's Stance",
+      "description": "Once per round if an adjacent ally is targeted by a ranged or spell attack, you may take the hit instead.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 2
+        }
+      }
+    },
+    {
+      "category": "Exploration",
+      "name": "Wilderness Footing",
+      "description": "Reduce MVMT cost in rough terrain types by 1 (min 1).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "SRV": 2
+        }
+      }
+    },
+    {
+      "category": "Exploration",
+      "name": "Fleet of Foot",
+      "description": "Roll travel MVMT with advantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "SRV": 2
+        }
+      }
+    },
+    {
+      "category": "Exploration",
+      "name": "Survivor's Instinct",
+      "description": "Auto-succeed on basic survival tasks (water, shelter, fire).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "SRV": 1
+        }
+      }
+    },
+    {
+      "category": "Exploration",
+      "name": "Pathfinder's Sense",
+      "description": "Advantage on navigation/orientation/hidden area checks.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "SRV": 4
+        }
+      }
+    },
+    {
+      "category": "Exploration",
+      "name": "Lock Whisperer",
+      "description": "You open non-magical locks in half the usual time and roll to do so with advantage.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Thievery": 3
+        }
+      }
+    },
+    {
+      "category": "Knowledge",
+      "name": "Scholar's Insight",
+      "description": "Roll with advantage on one chosen Scholarly skill.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Knowledge": 1
+        }
+      }
+    },
+    {
+      "category": "Linguistics",
+      "name": "Linguistic Expert",
+      "description": "Understand the basics of all languages even if you don't speak them.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Linguistics": 2
+        }
+      }
+    },
+    {
+      "category": "Lore",
+      "name": "Well-Read",
+      "description": "Ask 1 lore question per session and receive a true answer.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        }
+      }
+    },
+    {
+      "category": "Luck",
+      "name": "Gambler's Luck",
+      "description": "Once per day you may reroll a natural 1.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "Reflex": 3
+        }
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Elemental Attunement",
+      "description": "Elemental spells (fire, frost, lightning, nature) deal extra damage equal to half your level.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        }
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Death Sense",
+      "description": "You can always detect corpses, undead, and necromantic residue within 40ft without a roll.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        }
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Nature's Favor",
+      "description": "When casting a Druidic healing or root-based spell, roll healing/duration with advantage if standing on natural ground.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        },
+        "spell_type": "Druidic"
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Radiant Echo",
+      "description": "When you cast a Holy spell that heals or shields, the target glows faintly. Their next contest is rolled with advantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        },
+        "spell_type": "Holy"
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Spell Precision",
+      "description": "When you deal damage with an Arcane spell, you may reroll one die and use the new result.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        },
+        "spell_type": "Arcane"
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Prepared Components",
+      "description": "The first floral spell you cast in a combat acts as if you've expended one component.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        },
+        "spell_type": "Floral"
+      }
+    },
+    {
+      "category": "Magic",
+      "name": "Crimson Catalyst",
+      "description": "You may take 1HP damage to increase the range of a Shadow spell by 1 tile.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 2
+        },
+        "spell_type": "Shadow"
+      }
+    },
+    {
+      "category": "Mobility",
+      "name": "Escape Artist",
+      "description": "Once per day, you can escape from bonds, manacles, or tight spaces without a roll.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "category": "Mobility",
+      "name": "Quick Grip",
+      "description": "Equip/unequip freely, as if all weapons had Quickdraw.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "category": "Mobility",
+      "name": "Twinkletoes",
+      "description": "Once per combat, move through difficult terrain as normal.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 2
+        }
+      }
+    },
+    {
+      "category": "Mobility",
+      "name": "Step Lightly",
+      "description": "You leave no visible tracks and can bypass floor traps without triggering them.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Stealth": 2
+        }
+      }
+    },
+    {
+      "category": "Nature",
+      "name": "Beast Whisperer",
+      "description": "Advantage on calming or directing non-hostile beasts.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Animal Intuition": 2
+        }
+      }
+    },
+    {
+      "category": "Nature",
+      "name": "Echo of the Wilds",
+      "description": "Ask the GM 1 question about natural dangers/resources per session.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Nature": 3
+        }
+      }
+    },
+    {
+      "category": "Nature",
+      "name": "Beast Empathy",
+      "description": "You may calm or communicate basic emotions to wild animals without rolling, as long as they aren't hostile.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Animal Intuition": 1
+        }
+      }
+    },
+    {
+      "category": "Navigation",
+      "name": "Seafarer's Intuition",
+      "description": "You never get lost at sea and always which direction points to the nearest coast.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Navigation": 2
+        }
+      }
+    },
+    {
+      "category": "Personality",
+      "name": "That's Just Like You",
+      "description": "Once per day you may roll a check with advantage when invoking one of your traits.",
+      "cost": 0,
+      "requirements": {}
+    },
+    {
+      "category": "Practice",
+      "name": "Skilled Artisan",
+      "description": "Choose one Practice skill with which you're proficient. You may roll all checks and contests with that skill with advantage.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Practice": 1
+        }
+      }
+    },
+    {
+      "category": "Recovery",
+      "name": "Recuperation (1)",
+      "description": "Increase your recovery die by 1 level (d4->d6, etc).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 2
+        }
+      }
+    },
+    {
+      "category": "Recovery",
+      "name": "Recuperation (2)",
+      "description": "Increase your recovery die by 1 level (d6->d8, etc).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 4
+        }
+      }
+    },
+    {
+      "category": "Recovery",
+      "name": "Recuperation (3)",
+      "description": "Increase your recovery die by 1 level (d8->d10, etc).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 6
+        }
+      }
+    },
+    {
+      "category": "Recovery",
+      "name": "Sturdy Spirit",
+      "description": "Roll recovery dice with advantage during a rest.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 2
+        }
+      }
+    },
+    {
+      "category": "Recovery",
+      "name": "Enduring Rest",
+      "description": "Remove 1 additional exhaustion on short rest.",
+      "cost": 0,
+      "requirements": {}
+    },
+    {
+      "category": "Recovery",
+      "name": "Hardy Resolve",
+      "description": "Recover from wounds in half the usual time.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 2
+        }
+      }
+    },
+    {
+      "category": "Resilience",
+      "name": "Determination",
+      "description": "Any time you roll a check or contest you may take on 1 exhaustion to reroll. You must use the rerolled value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "VIG": 1
+        }
+      }
+    },
+    {
+      "category": "Resilience",
+      "name": "Iron Gut",
+      "description": "Immune to spoiled food/drink; advantage vs. ingested poisons.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 2
+        }
+      }
+    },
+    {
+      "category": "Resilience",
+      "name": "Unshakable",
+      "description": "Cannot be Frightened or Confused unless below half HP.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 3
+        }
+      }
+    },
+    {
+      "category": "Resilience",
+      "name": "Second Wind",
+      "description": "Once per day if your HP falls to 0, you instead fall to 1 HP.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "VIG": 5
+        }
+      }
+    },
+    {
+      "category": "Social",
+      "name": "Social Operator",
+      "description": "Gain 1 extra Merit when Carousing or Networking.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Conversational": 1
+        }
+      }
+    },
+    {
+      "category": "Social",
+      "name": "Silvertongue",
+      "description": "Your first social skill check against a new NPC each session has advantage.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Conversational": 1
+        }
+      }
+    },
+    {
+      "category": "Social",
+      "name": "Endearing Quirk",
+      "description": "Once per day you may reroll a failed Conversational skill check if you invoke a Trait.",
+      "cost": 0,
+      "requirements": {}
+    },
+    {
+      "category": "Social",
+      "name": "Captivating Presence",
+      "description": "Once per day after performing for a group, you may reroll one Conversational skill check against someone who saw it.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Performance": 2
+        }
+      }
+    },
+    {
+      "category": "Social",
+      "name": "Underworld Contacts",
+      "description": "You always know how to find fences, forgers, or criminals in towns and cities. Gain advantage on Conversational checks with them.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Deception": 2
+        }
+      }
+    },
+    {
+      "category": "Tracking",
+      "name": "Adept Tracker",
+      "description": "Auto-detect recent movement; advantage on detailed tracking.",
+      "cost": 0,
+      "requirements": {
+        "skills": {
+          "Tracking": 2
+        }
+      }
+    }
+  ]
+} 

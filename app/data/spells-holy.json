@@ -1,0 +1,340 @@
+{
+  "spells": [
+    {
+      "tier": 1,
+      "name": "Blessing of Light",
+      "description": "Create a font of blinding light at your location that shines bright light in a 60ft radius. The font lasts for 6 turns and cannot be moved, but can be dismissed at will.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Divine Touch",
+      "description": "Heal a creature in melee range for 1d8.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Purify Food and Drink",
+      "description": "Remove impurities and toxins from food and drink.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Bless",
+      "description": "Grant a creature you can see advantage on a single roll.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Detect Evil",
+      "description": "You can sense the presence of evil within 100 feet. Any material thicker than 2 inches prevents you from detecting anything.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Blessing of Dawn",
+      "description": "Heal a creature within 4 tiles for 1d4. They gain temp HP equal to your pos trait value. If the target is below 25% max HP before being healed, double the temp HP.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Prayer of Mass Blessing",
+      "description": "Heal all friendly creatures within 4 tiles of you for 1d4 damage. They gain temp HP equal to your pos trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Smite",
+      "description": "Deal 1d8 + pos trait value holy damage to a creature in melee range.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Blinding Light",
+      "description": "All enemies adjacent to you roll a MND contest against you. They take 1d4 holy damage and, if they fail, take on the Blinded (pos trait value) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Holy Brand",
+      "description": "You mark an enemy for holy retribution. Deal 1d4 holy damage to a creature within 6 tiles. The next ally to hit the target heals for HP equal to your positive trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Serenity",
+      "description": "Remove a single status effect from a creature within 4 tiles. If the creature is also below 50% HP, they also heal 1d4 HP.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Divine Judgement",
+      "description": "Deal 1d6 + pos trait value holy damage to a creature within 4 tiles. If you roll critical damage, the creature is also Blinded for 1 turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Purifying Flame",
+      "description": "Choose a creature within 4 tiles. Deal 1d4 holy damage and remove all negative status effects from them.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Blessing of Sacrifice",
+      "description": "Sacrifice your own HP to heal an ally within 4 tiles. For each point of damage you take, heal the selected ally for 3 HP. If the ally was below 25% max HP before being healed, they also gain temp HP equal to your pos trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Empower Weapon",
+      "description": "Empower your melee/ranged weapon or the weapon of an adjacent creature with the power of your god. Basic melee attacks with the weapon now deal extra holy damage equal to your pos trait value until the end of the combat.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Shield of Grace",
+      "description": "Summon a barrier of radiant light around an ally within 4 tiles. The target gains resistance to all magic damage and armor equal to your positive trait value for a number of rounds equal to your positive trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Turn Undead",
+      "description": "Brandish your talisman, repulsing undead influence in your vicinity. Undead within 4 tiles of you in all directions roll a VIG contest against your MND. If they fail, they must spend their next turn moving away from you as directly as possible. If your positive trait value is at its maximum value they also take 1d6 damage regardless of the result of the contest.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Divine Reprisal",
+      "description": "You beckon your god to punish those who strike the faithful. Mark a creature within 6 tiles. For a number of rounds equal to your positive trait value, whenever it damages one of your allies it takes 1d6 + positive trait value holy damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Hammer of Light",
+      "description": "Manifest a divine warhammer above a creature within 4 tiles. It slams into them, dealing 1d10 damage plus your positive trait value. The target then rolls a VIG contest against your MND. If you succeed, the target takes the Stunned status for 1 turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Consecration",
+      "description": "Suffuse a 5x5 tile centered on you with Holy magic, dealing 1d6 + pos trait value damage to all enemies within and healing allies for the same amount. You may take another point of exhaustion on your next turn to beckon forth even more holy energy, dealing 2d6 + pos trait value to any enemies and the same amount of healing to all allies within the same area.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Call for Retribution",
+      "description": "Choose a number of creatures you can see within 4 tiles equal to your pos trait value. Each chosen creature takes 1d6 holy damage + pos trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Radiant Aegis",
+      "description": "Raise a divine shield to protect an ally. Choose an ally within 4 tiles. For a number of turns equal to your positive trait value the target gains resistance to all damage and cannot be moved or forcibly repositioned by enemy effects. If the target is below 50% max HP when you cast this, they also heal for 1d6 + pos trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Beacon of Wrath",
+      "description": "A holy flare marks your enemies for divine vengeance. Target a 3x3 tile within 6 tiles. All enemies within the area must make a MND contest against you. On a failure, they are marked by divine light for 2 turns. Attacks against marked enemies deal additional radiant damage equal to your positive trait value and cannot be made with disadvantage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Divine Intercession",
+      "description": "When an ally within 6 tiles drops to 0 HP you may call for your god to intercede on their behalf. They instead drop to 1 HP and immediately heal for 2d6 + your pos trait value. They may also stand up if prone and are cleansed of all negative status effects.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Mantle of the Martyr",
+      "description": "Your life becomes a shield for others. As a reaction you may expend 1 exhaustion to take the damage dealt to an ally within 4 tiles instead of them. The first time you do this in a combat gain temp HP equal to twice your pos trait value. If you fall to 0 HP while under this effect, you instead fall to 1 HP, then heal 2d6 + your pos trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Hallowed Ground",
+      "description": "You bless a 50ft radius area, sanctifying it against evil and corruption. For the next 24 hours, the area feels peaceful and safe: undead, cursed, or malevolent entities feel discomfort (narrative effect) and are reluctant to enter. Camp actions taken within this area grant +1 temporary HP after a long rest.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Truthsense",
+      "description": "You know when a creature knowingly lies to you for 10 minutes. No check is required.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Resurrection Light",
+      "description": "For the next hour, if a creature within 30ft would receive a wound, you may instead take on that wound. This spell costs 1 Wound to cast.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    }
+  ]
+} 

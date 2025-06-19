@@ -1,0 +1,352 @@
+{
+  "spells": [
+    {
+      "tier": 1,
+      "name": "Petal Bomb",
+      "description": "Choose a creature within 6 tiles. You lob a pouch of toxic powder at them, dealing 1d6 poison damage. Deals an additional 1d4 per component expended.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Blooming Salve",
+      "description": "Heal a creature in melee range for 1d6. Remove 1 status effect per component expended.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Mycotoxin Puff",
+      "description": "Choose a 2x2 tile within 4 tiles. A cloud of fungal spores fills the area. All creatures must roll a VIG contest vs your MND. On fail, they are Confexpended for 1 turn and take 1d4 poison damager per component expended.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Acid Drip",
+      "description": "Deal 1d6 acid damage to a creature within 4 tiles. If a component is expended they take on the Weaken (1) status for 1 turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Glowcap Flash",
+      "description": "Choose a 2x2 tile within 4 tiles. Crush a glowing mushroom and hurl it. It explodes in bioluminescence. All creatures must pass a Reflex (AGL) check or be Blinded for 1 turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Caustic Poultice",
+      "description": "Touch a creature's weapon and apply a burning herbal paste. On their next melee or ranged attack, they deal +1d4 acid damage. If a component is expended target of the attack also loses 1 armor, and the effect lasts for a number of attacks equal to the number of components expended.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Verdant Snare",
+      "description": "Choose a tile within 5 tiles. Tangling weeds erupt and apply the Rooted status a creature standing there unless they pass a STR contest vs your MND. If a component is expended: Rooted lasts an additional turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Flammable Arc",
+      "description": "Deal 1d6 fire damage to any creatures in the 3 adjacent tiles in front of you. Deals an additional 1d6 damage per component expended.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Spore Servant",
+      "description": "Animate a corpse within 4 tiles into a Spore Servant: HP = your MND, attacks for 1d6 poison damage in melee. If a component is expended the servant also releases a spore cloud on death that inflicts Confexpended on all adjacent enemies that fail a VIG contest against your MND.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Dust to Life",
+      "description": "Target a corpse within 4 tiles. Convert its decay into vital energy, healing a nearby ally within 4 tiles for 1d6. Heals an additional 1d6 per component used.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Cloud of Whispers",
+      "description": "Choose a tile within 5 tiles. Tangling weeds erupt and apply the Rooted status a creature standing there unless they pass a STR contest vs your MND. If a component is expended Rooted lasts an additional turn.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Sporeburst Mine",
+      "description": "Plant a delayed fungal trap in a tile within 4 tiles. When triggered, it explodes in spores: all creatures in a 2x2 area must pass a VIG contest vs your MND or take 1d6 poison damage. If a component is expended inflict Poisoned (1) on failed checks.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Acid Lash",
+      "description": "Unleash a vine whip dripping with corrosive slime at a creature within 3 tiles. Deal 1d8 acid damage. If a component is expended the target also loses 1d4 armor.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Thornguard",
+      "description": "Infuse a target within 4 tiles with reactive bark. Whenever they are hit in melee, the attacker takes 1d4 piercing damage. If a component is expended the target also gains 1d6 barrier.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Boneflower Revival",
+      "description": "Sprout a death-bloom from a corpse within 4 tiles. Heal all allies in adjacent tiles for 1d6 HP. If a component is expended it also grants 1d6 barrier to those healed.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Acidic Mire",
+      "description": "Create a 3x3 patch of acidic muck within 5 tiles. It becomes difficult terrain. Anytime a creature moves into one of the tiles it takes 1d4 acid damage. If a component is expended the damage increases to 1d6.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Toximoss Trap",
+      "description": "Toss a fungal mine to a tile within 3 tiles. When a creature steps on it, it bursts, dealing 2d6 poison damage. If you expended a component they perform an AGL contest vs your MND. On fail they are knocked Prone.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Blinding Bloom",
+      "description": "Target a 2x2 tile within 6 tiles. Radiant sporepods explode in a flash. All creatures must pass a Reflex (AGL) contest vs your MND or be Blinded for 1 turn. If a component is expended also deal 1d6 fire damage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Greater Spore Servant",
+      "description": "Animate a corpse within 4 tiles into a Spore Servant: HP = 2x your MND, attacks for 2d6 poison damage in melee. If a component is expended the servant also releases a spore cloud on death that inflicts Confexpended on all adjacent enemies that fail a VIG contest against your MND, enemies roll the contest with disadvantage.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Toxic Inferno",
+      "description": "Choose a 3x3 tile within 6 tiles. A titanic fungal flower bursts open in a flash of fire and spores. All creatures take 2d8 fire damage and must pass a VIG contest vs your MND or be Poisoned (2). If a component is expended also inflicts Burned (2).",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Bloomshield",
+      "description": "Summon a massive thorned wall of plants to protect a 4x1 tile. All allies adjacent gain 1d6 armor and barrier, and any enemies adjacent take 1d6 damage per turn. Lasts for 3 turns. If a component is expended it lasts for an additional turn per component expended. May expend another component on any subsequent turn to move the wall up to 4 tiles.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Composted Convalescence",
+      "description": "You beckon forth roots that absorb the latent life energy within up to 4 corpses. For each corpse you may heal a creature 1d6, and the healing may be spread among any creatures of your choice. The corpses are absorbed into the earth after you cast this spell. If you expend a component each corpse instead heals for 1d10 and cures one negative status effect.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Speak with Fungi",
+      "description": "You can communicate with mushrooms, spores, and molds within 10ft for 10 minutes. They share impressions of nearby events, moisture, and decay. If a component is expended the duration increases to 1 hour, and you can understand plant-based languages temporarily.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Glowcap Light",
+      "description": "Crush a bioluminescent fungus to emit soft light in a 20ft radius for 1 hour. You may attach the fungus to any object. If a component is expended the light shifts colors on command, revealing hidden markings or magical auras.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Herbal Scentveil",
+      "description": "Concoct a masking perfume that nullifies your and nearby allies' scent. Lasts 1 hour. If a component is expended gain advantage on checks to hide from scent-reliant trackers.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Bloomtent",
+      "description": "You grow a dome of oversized mushrooms and vines, forming a 20ft shelter. It is breathable, insulated, and naturally camouflaged. If a component is expended the shelter emits a calming sporefield—resting here restores an extra +1 HP after a long rest.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Spore Alarm",
+      "description": "Lay spores in a radius up to 20ft. Any creature passing through without your permission triggers a psychic ping in your mind. If a component is expended you receive an image and vague emotional read of the intruder.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Verdant Camouflage",
+      "description": "Touch a creature. For 1 hour, their body takes on plantlike colors and textures suitable to the environment, granting advantage on Stealth checks in natural settings. If a component is expended the effect includes odor masking and heat signature reduction, affecting magical detection too.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Component Pouch"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Fungal Nexus",
+      "description": "Plant a special spore pod in a location. For 24 hours, you may meditate at any other known pod and instantly communicate telepathically with anyone within 10ft of this one. If a component is expended you may transfer any item weighing less than 100lb between the pods.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Component Pouch"]
+      }
+    }
+  ]
+} 

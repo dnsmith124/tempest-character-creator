@@ -1,0 +1,352 @@
+{
+  "spells": [
+    {
+      "tier": 1,
+      "name": "Life Drain",
+      "description": "Reach out with a hand of shadowy energy to a target within 4 tiles, draining their life force. Deal 1d8 shadow damage plus negative trait value to the target and heal yourself for half the damage dealt.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Raise Skeleton",
+      "description": "Infuse a nearby corpse within 4 tiles with dark energy, raising it as a skeleton under your control. The skeleton has HP and MVMT equal to your negative trait value and attacks with melee, dealing 1d6 shadow damage. It acts on your turn.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Dark Pact",
+      "description": "Sacrifice up to your negative trait value in HP to grant 2x that much temporary HP to yourself or an ally.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Soul Shackle",
+      "description": "Choose a creature within 4 tiles. Whenever you receive damage or healing, the target takes that amount of damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Blood Extraction",
+      "description": "Draw latent energy from an adjacent corpse and use it to restore yourself. You heal 1d6 HP. If there is any excess healing, you gain it as temporary HP.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Deathwalk",
+      "description": "You embrace unlife and become ephemeral like a ghost, moving forward up to 4 tiles. You may pass through other creatures, and deal 1d4 necrotic damage to any creature you pass through.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Leechstrike",
+      "description": "Infuse your equipped weapon with necrotic energy. Your next 2 basic attacks deal additional damage equal to your negative trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Unholy Miasma",
+      "description": "Choose a 2x2 tile area within 6 tiles. Each target takes rolls a VIG contest against your MND. On fail they take the Poisoned status (value equal to your negative trait value).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Life Harvest",
+      "description": "Draw energy from all adjacent creatures. Each takes 1d6 shadow damage and you heal for half the total damage dealt (rounded down).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Corpse Explosion",
+      "description": "You force the latent energy within a collapsed foe to explode, dealing 1d6 shadow damage plus negative trait value to all adjacent creatures.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Darkmoon Curse",
+      "description": "Choose a creature within 4 tiles. That creature takes 1d6 shadow damage and takes on the Cursed status (value equal to your neg trait value)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Mark of Death",
+      "description": "Choose a creature within 4 tiles. For the next 3 rounds whenever that creature takes damage it takes additional shadow damage equal to your negative trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Gravebind",
+      "description": "A targeted creature within 6 tiles makes a Reflex(AGL) save against your MND. On fail, they take on the Rooted (2) status and take shadow damage equal to your negative trait value.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Grasp of the Grave",
+      "description": "A shadowy figure of death rises from the ground beneath a creature within 6 tiles. They roll a MND contest against you. If they fail, they take 1d6 necrotic damage and take on the Weakened (neg trait value) status",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Blood Pact",
+      "description": "Sacrifice up to your negative trait value in HP to deal 2x that much more damage on your next spell or attack. (This ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Raise Skeletal Colossus",
+      "description": "Infuse several corpses within 4 tiles with dark energy, combining their bones into a massive skeletal colossus. The colossus has HP equal to your negative trait value + the number of corpses consumed and may move up to 4 tiles on your turn and perform a melee attack on your turn, dealing 1d6 + the number of corpses consumed shadow damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Blood Puppet",
+      "description": "Manipulate the flesh of the living like a marionette. Target a creature within 4 tiles. They must roll a VIG contest against your MND. On a failure, you may immediately move them up to 3 tiles in any direction. If you move them into a hazard (trap, fire, edge), they take 1d6 damage. You can move them into obvious self-harm (e.g. off a cliff).",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Bone Armor",
+      "description": "Animate shattered bone to shield your flesh. You wrap yourself in jagged bone fragments from a corpse within 2 tiles. Gain temp HP equal to 2x your negative trait value. Any creature that hits you with a melee attack takes 1d4 piercing damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Veil of the Forgotten",
+      "description": "Your body is lost between life and death. Become insubstantial for 2 turns. While in this state, you are immune to non-magical attacks, can move through enemies and walls (up to 1 tile thick), and cannot be targeted by reactions. You cannot deal damage during this time, but may cast non-damaging spells.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Cloak of Shadows",
+      "description": "If your negative trait value is 3 or greater, you wrap yourself in a shroud of shadow energy. You gain the Invisible status until you perform an attack or check/contest.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Soul Walk",
+      "description": "Choose a corpse within 12 tiles. Once per turn you may teleport to the space where that corpse is located without using your action or movement.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Orb of Shadow",
+      "description": "Create an orb of shadow with a radius of 20ft. No light can penetrate the orb, and all creatures within are given the Blind status. The orb lasts for 10 minutes (60 rounds, 1 turn) or until dismissed.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Darkvision",
+      "description": "Grant a creature the ability to see in total darkness for 10 minutes. Also removes the Blind status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Nightmare",
+      "description": "Induce dreams of your choosing upon a sleeping target.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Speak with the Dead",
+      "description": "You touch a dead creature, allowing you to communicate with them for 24 hours. If the creature does not speak a language you are familiar with you may express and understand basic ideas an emotions, as if you were communicating nonverbally.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Detect Sacred",
+      "description": "You can sense the presence of sacred magic within 100 feet. Any material thicker than 2 inches prevents you from detecting anything.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Wand", "Staff"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Flicker",
+      "description": "Instantly teleport up to 10ft to a shadowed space you can see. Can bypass bars, slats, or small gaps, but not solid objects.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Eavesdrop",
+      "description": "You enchant a shadowed space to repeat all spoken conversation in your mind as a whisper. Lasts 10 minutes.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Talisman"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Shadow Veil",
+      "description": "You and up to 3 allies become nearly invisible in shadow or dim light. Gain advantage on all Stealth checks for 10 minutes.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Talisman"]
+      }
+    }
+  ]
+} 

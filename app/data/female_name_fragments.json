@@ -1,0 +1,112 @@
+{
+  "Human (Daiman)": {
+    "first": {
+      "prefix": ["Agla", "Andro", "Chry", "Cleo", "Deme", "Eri", "Helio", "Iphi", "Kalli", "Leto", "Melan", "Neme", "Nyx", "Olym", "Phae", "Poly", "Theo", "Thes", "Xeno", "Pene"],
+      "suffix": ["ane", "dora", "eia", "esa", "fane", "ia", "is", "kora", "leia", "lissa", "melia", "nora", "peia", "phina", "sa", "thea", "tria", "voa", "yne", "lope"]
+    },
+    "last": {
+      "prefix": ["Agri", "Archi", "Doro", "Eury", "Helio", "Hyper", "Kry", "Laco", "Mega", "Myr", "Neo", "Ortho", "Peli", "Proto", "Py", "Rhodo", "Steno", "Tele", "Timo", "Xylo"],
+      "suffix": ["polis", "phanes", "deme", "dorus", "genes", "krates", "mythos", "nomos", "pathes", "pides", "pygus", "rades", "sthenes", "techne", "theris", "tios", "tropos", "xer", "xen", "zos"]
+    }
+  },
+  "Orc": {
+    "first": {
+      "prefix": ["Anah", "Arya", "Bahar", "Darya", "Farah", "Gol", "Homa", "Jahan", "Leila", "Mehr", "Narg", "Par", "Roya", "Shirin", "Simin", "Sor", "Tara", "Vana", "Yas", "Zah"],
+      "suffix": ["afsa", "azar", "banu", "dara", "dina", "gol", "jahan", "mar", "meh", "mina", "naz", "noosh", "oon", "par", "rokh", "shad", "tara", "var", "yar", "zarin"]
+    },
+    "last": {
+      "prefix": ["Ahur", "Anu", "Asp", "Bar", "Chos", "Dae", "Far", "Gorz", "Har", "Harm", "Jam", "Kai", "Mehr", "Ormaz", "Pars", "Rost", "Shah", "Tis", "Varz", "Zar"],
+      "suffix": ["ad", "bakh", "dast", "esh", "gar", "ian", "khan", "mir", "nab", "rad", "rosh", "saf", "shan", "tand", "var", "yaz", "yeh", "zadeh", "zar", "zin"]
+    }
+  },
+  "Human (Luminite)": {
+    "first": {
+      "prefix": ["Asa", "Bryn", "Dag", "Eld", "Frey", "Gunn", "Hel", "Idun", "Kari", "Liv", "Magn", "Norn", "Sif", "Skjol", "Solveig", "Thor", "Urd", "Vali", "Ylva", "Yr"],
+      "suffix": ["bjorg", "dis", "eld", "hild", "lin", "liv", "lod", "mar", "nor", "runa", "sel", "sin", "sola", "thora", "tyra", "unna", "veig", "vor", "wyn", "yr"]
+    },
+    "last": {
+      "prefix": ["As", "Bane", "Berg", "Blod", "Brand", "Eld", "Frost", "Gorm", "Hjal", "Is", "Kol", "Lod", "Mork", "Orm", "Rav", "Skar", "Sten", "Svart", "Tyr", "Var"],
+      "suffix": ["bjorn", "blut", "fjall", "gard", "heim", "hild", "hold", "land", "ling", "mark", "mod", "rekk", "run", "sig", "son", "stein", "vald", "vard", "vik", "wyr"]
+    }
+  },
+  "Amber Elf": {
+    "first": {
+      "prefix": ["Aer", "Cir", "Esta", "Faen", "Isar", "Mad", "Mael", "Mar", "Mira", "Nua", "Sael", "Sar", "Shal", "Sil", "Sol", "Tan", "Val", "Vel", "Zal", "Zale"],
+      "suffix": ["ael", "aeth", "aira", "ariel", "atha", "dael", "eira", "ella", "eth", "ia", "lia", "liana", "neth", "riel", "ris", "thael", "thia", "thra", "ulea", "var"]
+    },
+    "last": {
+      "prefix": ["Brin", "Carel", "Diryn", "Eldor", "Elran", "Kar", "Kant", "Morv", "Orin", "Ril", "Syl", "Thal", "Val", "Vael", "Vorn", "Vir", "Vor", "Vory", "Voryn", "Zale"],
+      "suffix": ["anor", "ar", "aran", "ath", "dael", "dar", "dor", "ion", "ior", "ith", "len", "nor", "orin", "orn", "rith", "thar", "thal", "var", "vin", "zov", "zky"]
+    }
+  },
+  "Azure Elf": {
+    "first": {
+      "prefix": ["Alb", "Alex", "Bran", "Dar", "Eva", "Irin", "Jez", "Kat", "Mil", "Mir", "Nad", "Nik", "Rum", "Sas", "Sof", "Stan", "Tsvet", "Vlad", "Zana", "Zory"],
+      "suffix": ["ana", "anda", "bina", "cia", "eva", "ia", "icka", "ika", "ina", "ira", "lana", "lena", "mira", "shka", "sky", "slava", "tka", "veta", "zha", "yana"]
+    },
+    "last": {
+      "prefix": ["Brod", "Dub", "Hrabo", "Isak", "Kola", "Lebe", "Liti", "Mende", "Novo", "Per", "Prok", "Slow", "Tim", "Twers", "Volk", "Vor", "Voro", "Yal", "Yel", "Zhir"],
+      "suffix": ["ov", "ovsky", "off", "ovich", "ska", "ski", "kov", "kova", "len", "lev", "rinsky", "vich", "vin", "zich", "wick", "wick", "zki", "zov", "zky", "yev"]
+    }
+  },
+  "Dwarf": {
+    "first": {
+      "prefix": ["Alen", "Anja", "Ann", "Brig", "Carin", "Chris", "Corin", "Dian", "Fri", "Ger", "Gre", "Hei", "Ivon", "Kor", "Laksh", "Lou", "Son", "Urs", "Veena", "Viv", "Hil"],
+      "suffix": ["anna", "bel", "chen", "dina", "elle", "ette", "frida", "hild", "ina", "ine", "is", "lena", "line", "lynn", "nette", "rina", "sula", "vati", "thilde", "vianne"]
+    },
+    "last": {
+      "prefix": ["Amber", "Anchor", "Anvil", "Barnacle", "Blight", "Brick", "Broad", "Coal", "Drift", "Ebon", "Ember", "Forge", "Grumble", "Hammer", "Horn", "Iron", "Keg", "Pebble", "Salt", "Stone", "Tide"],
+      "suffix": ["arm", "back", "beard", "bitty", "breaker", "buckle", "caller", "chin", "coat", "crest", "drift", "fin", "grip", "hand", "heart", "hide", "mail", "sail", "sent", "shaper", "singer"]
+    }
+  },
+  "Poliwok": {
+    "first": {
+      "prefix": ["Amr", "Arad", "Arun", "Dip", "Esh", "Ghani", "Harsh", "Ind", "Kal", "Mea", "Neh", "Rav", "Resh", "Sar", "Sim", "Sun", "Swar", "Tamb", "Vas", "Zam", "Zha"],
+      "suffix": ["adhna", "ani", "aswati", "da", "dara", "dina", "ha", "hita", "ita", "kali", "lani", "li", "mira", "rana", "rani", "sha", "swara", "rani", "tari", "singh", "wal"]
+    },
+    "last": {
+      "prefix": ["Anj", "Bur", "Chad", "Chand", "Dhu", "Dul", "Gadh", "Geh", "Jas", "Khur", "Kor", "Khang", "Log", "Maol", "Marn", "Mur", "Nain", "Pat", "Ran", "Sher"],
+      "suffix": ["ala", "ani", "anj", "at", "avi", "awat", "chand", "dai", "devi", "dhana", "dula", "gani", "mor", "nagan", "nell", "patrick", "jati", "mani", "nath", "pati"]
+    }
+  },
+  "Felesian": {
+    "first": {
+      "prefix": ["Ais", "Aoif", "Aoif", "Bron", "Car", "Ci", "Eav", "Eim", "Fia", "Fion", "Imo", "Jenn", "Libur", "Nes", "Nia", "Octa", "Or", "Port", "Quin", "Saoir", "Shan"],
+      "suffix": ["ad", "aid", "aid", "aira", "alagh", "an", "ana", "ard", "ead", "ella", "iadh", "fest", "ina", "lia", "la", "nia", "maeve", "oria", "oise", "onagh"]
+    },
+    "last": {
+      "prefix": ["Bel", "Cad", "Con", "Cunn", "Donn", "Devon", "Fiddle", "Flan", "Fizzle", "Glen", "Guir", "Han", "Kill", "Lemb", "Maol", "Marn", "Murda", "Neb", "Thistle", "Wand"],
+      "suffix": ["ach", "anach", "broch", "circk", "gh", "delver", "flow", "lach", "frond", "lander", "mach", "mon", "mane", "peak", "nagan", "nell", "wire", "pocket", "twine", "weaver"]
+    }
+  },
+  "Gnome": {
+    "first": {
+      "prefix": ["Anto", "Auri", "Asin", "Brie", "Calp", "Fest", "Furi", "Helv", "Khal", "Mal", "Merid", "Mid", "Nyro", "Placid", "Port", "Raf", "Ras", "Saf", "Sad", "Vel", "Vitr"],
+      "suffix": ["ania", "aria", "asinia", "aura", "avia", "bria", "ella", "ena", "mat", "rex", "rind", "mina", "lia", "saxes", "oria", "qa", "sha", "ya", "yah", "yana", "una"]
+    },
+    "last": {
+      "prefix": ["Cobble", "Copper", "Cork", "Dazzle", "Deep", "Devon", "Far", "Fiddle", "Fizzle", "Grim", "Guir", "Han", "Kill", "Lemb", "Maol", "Marn", "Murda", "Neb", "Thistle", "Wand"],
+      "suffix": ["bell", "block", "brock", "clock", "dale", "delver", "fall", "flow", "frond", "lander", "mach", "mon", "mane", "peak", "nagan", "nell", "wire", "pocket", "twine", "weaver"]
+    }
+  },
+  "Pluma": {
+    "first": {
+      "prefix": ["Aal", "Esm", "Fah", "Far", "Had", "Hal", "Ihab", "Jam", "Khal", "Mal", "Merid", "Mid", "Nad", "Nad", "Plac", "Solund", "Umb", "Var", "Vard", "Yam", "Fari"],
+      "suffix": ["ah", "dia", "fa", "ha", "ima", "iya", "la", "ma", "mat", "rad", "rind", "mina", "na", "na", "maash", "sona", "thaxes", "ura", "ura", "yya", "ziha"]
+    },
+    "last": {
+      "prefix": ["N/A"],
+      "suffix": ["N/A"]
+    }
+  },
+  "Dragonborn": {
+    "first": {
+      "prefix": ["Cren", "Drex", "Elrin", "Fortis", "Kal", "Kil", "Mal", "Placid", "Solund", "Zar", "Zagr", "Zul", "Zulk", "Zari", "Zar", "Axon", "Phae", "Cid", "Elrin", "Kren", "Zari"],
+      "suffix": ["axes", "ines", "isaxes", "kaxes", "kona", "osa", "rex", "saxes", "sona", "undra", "xes", "xa", "xar", "zos", "usaxes", "zos", "pollonius", "es", "isaxes", "xen", "zos"]
+    },
+    "last": {
+      "prefix": ["N/A"],
+      "suffix": ["N/A"]
+    }
+  }
+} 

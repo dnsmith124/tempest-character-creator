@@ -1,0 +1,243 @@
+{
+  "abilities": [
+    {
+      "tier": 1,
+      "name": "Piercing Shot",
+      "description": "A powerful ranged attack that pierces through a target within the range of your equipped weapon, dealing damage to your target and to another creature within 3 tiles behind it in a straight line.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Ricochet",
+      "description": "A clever shot that bounces your shot projectile off of a surface and into a creature who is behind cover.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Hunter's Mark",
+      "description": "Mark a target you can see within 10 tiles. Damage applied to the target is increased by half of your AGL (rounded down, min 1) from all sources.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Taunting Shot",
+      "description": "Choose a creature within 8 tiles. Make a basic weapon attack against the target. If the target takes damage from the attack (meaning the damage isn't reduced to 0 by their armor) the target takes on the Taunted (2) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Twinned Shot",
+      "description": "You fire off two projectiles at once, targeting up to two different creatures within 6 tiles. Roll a basic ranged attack against each.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Crippling Shot",
+      "description": "Choose a creature within 8 tiles that you can see. You aim for their legs, dealing a basic ranged weapon attack against them and inflicting the Hobbled status if you succeed on an AGL contest against them.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 1
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Kill Command",
+      "description": "Choose a creature within melee range of your pet. Your pet performs a basic melee attack against it and rolls damage with advantage. (this ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Animal/Mechanical Companion"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Mend Pet",
+      "description": "If your pet is within 6 tiles, heal it for 1d4 + VIG.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Animal/Mechanical Companion"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Volley",
+      "description": "Choose a 2x2 area within 10 tiles. Rain a series of projectiles down on the targeted area, rolling a basic ranged attack against each creature within.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Steel Trap",
+      "description": "Choose a tile within 5 tiles of you. You toss a steel trap onto the chosen tile. Any creature who steps on or occupies the space gains the Rooted status for 2 turns and takes 1d4 damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Poisoned Trap",
+      "description": "Choose a tile within 5 tiles of you. You toss a poisoned trap onto the chosen tile. Any creature who steps on or occupies the space gains the Poison (1) status and takes 1d4 poison damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Disarming Shot",
+      "description": "Choose a creature within 8 tiles that you can see and is wielding a weapon. You take careful aim and shoot a precise shot at their weapon, knocking it from their grasp. In order to use their weapon, they must spend an action picking it up and re-equipping it.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Spellshot",
+      "description": "Bind mystical power into your shot, applying a damage type of your choosing to a basic ranged attack and dealing an additional 1d4+AGL damage of that type.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 3,
+          "MND": 3
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Wing Clip",
+      "description": "Switch to a melee weapon in your inventory without using your action, then perform a basic melee attack against an adjacent enemy. If the attack deals damage after applying their armor, they gain the Hobbled status and you may move away without incurring an attack of opportunity.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        },
+        "equipment": ["Melee Weapon"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Barrage",
+      "description": "Overload your ranged weapon and fire three shots simultaneously. They fire out in a straight line originating from the three tiles in front of you, dealing a basic ranged attack against the first creature hit by each shot.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Feign Death",
+      "description": "You drop to the ground and play dead. Any creatures currently engaged with you switch to new targets, allowing you to move away without incurring an attack of opportunity. (This ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 5
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Disengage",
+      "description": "Leap backward up to 3 tiles. If an enemy was engaging you in melee, it does not get an attack of opportunity against you. (This ability does not consume your action)",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Concussive Shot",
+      "description": "Choose a creature within 8 tiles. Make a basic ranged attack against the target, then they perform a VIG contest against your AGL. If you succeed, the target gains the Stunned (AGL/2) status.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Double Volley",
+      "description": "Choose two 2x2 areas within 10 tiles. Rain a series of projectiles down on the targeted areas, rolling a basic ranged attack against each creature within.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Aimed Shot",
+      "description": "Charge up a devastating shot, then unleash it on a target within your ranged weapon's range. The resulting attack deals 2 extra dice of damage.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "AGL": 7
+        },
+        "equipment": ["Ranged Weapon"]
+      }
+    }
+  ]
+} 

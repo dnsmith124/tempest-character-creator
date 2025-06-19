@@ -1,0 +1,75 @@
+{
+  "Conversational": [
+    { "name": "Deception", "description": "Deceive or otherwise disguise your true intentions. Lie well." },
+    { "name": "Intuition", "description": "Determine when others are being truthful, see into their true intentions, and determine details about their personality. Read the room." },
+    { "name": "Intimidation", "description": "Coerce or frighten others through threats or mere presence. Exude menace." },
+    { "name": "Mercantile", "description": "Haggle for a good deal and convince others to buy your goods at higher prices. Seal the deal." },
+    { "name": "Persuasion", "description": "Convince others to see your point of view or agree with your requests. Win them over." },
+    { "name": "Performance", "description": "Entertain or captivate an audience through various forms of artistic expression. Steal the spotlight." },
+    { "name": "Wit", "description": "Think quickly, solve problems under pressure, and find clever or unexpected solutions. Used to outmaneuver others in conversation, notice logical flaws, devise plans on the fly, or grasp subtle patterns in complex situations. Outsmart everyone." }
+  ],
+  "Scholarly": [
+    { "name": "Arcane", "description": "Knowledge and understanding of arcane principles and spellcraft. Useful for identifying the properties of scrolls, magical items, and magical mechanisms. Master the void." },
+    { "name": "Architecture", "description": "Knowledge of building design, construction methods, and structural integrity, be it current, historical, familiar, or foreign. Read the walls." },
+    { "name": "Decorum", "description": "Knowledge of the mores, taboos, speech, and behavior of the elite and well-educated. Mingle with the patrician." },
+    { "name": "Herbalism", "description": "Knowledge of plants and their uses, and the ability to gather them effectively. Pluck with purpose." },
+    { "name": "History", "description": "Knowledge of past events, cultures, and significant figures. Understand the past." },
+    { "name": "Linguistics", "description": "Knowledge of languages and the ability to understand and communicate in them. Break any silence." },
+    { "name": "Medicine", "description": "Knowledge of healing practices, diseases, and medical treatments. Patch everyone up." },
+    { "name": "Nature", "description": "Knowledge of the natural world, including flora, fauna, and ecosystems. Trust the wilds." },
+    { "name": "Religion", "description": "Knowledge of religious practices, deities, and spiritual beliefs. Know the gods' nature." },
+    { "name": "Streetwise", "description": "Knowledge of the tendencies, practices, and dialects of common folk. Speak slang." }
+  ],
+  "Perceptive": [
+    { "name": "Investigation", "description": "Analyze and deduce information from clues and evidence, as well as search specific, small areas. Put the pieces together." },
+    { "name": "Perception", "description": "Observe and interpret details in the environment. Notice every aspect." },
+    { "name": "Tracking", "description": "Follow and interpret tracks and signs left by creatures or people. Spot the traces." }
+  ],
+  "Physical": [
+    { "name": "Acrobatics", "description": "Conduct feats of agility, balance, and coordination. Stick the landing." },
+    { "name": "Athletics", "description": "Perform physically demanding tasks such as running, swimming, and climbing. Go the distance." },
+    { "name": "Brawn", "description": "Exert physical strength and power. Flex your muscles." },
+    { "name": "Reflex", "description": "React quickly and avoid danger. Don't blink." },
+    { "name": "Stealth", "description": "Move quietly, remain unnoticed, and hide. Embrace the shadows." },
+    { "name": "Thievery", "description": "Pick locks, pockets, and perform other acts of sleight of hand. Take what's theirs." }
+  ],
+  "Practical": [
+    { "name": "Alchemy", "description": "Create potions and poisons from a myriad of ingredients. Become the brewmaster." },
+    { "name": "Animal Husbandry", "description": "The care, breeding, and training of domesticated animals. Heed the herd." },
+    { "name": "Animal Intuition", "description": "Understand and communicate with wild animals. Train the untamed." },
+    { "name": "Cartography", "description": "Create and read maps. Chart the unknown." },
+    { "name": "Cooking", "description": "Prepare and cook a variety of foods. Feed the world." },
+    { "name": "Enchanting", "description": "Enhance otherwise mundane items through crystalline sorcery, granting them additional magical effects. Bind the arcane." },
+    { "name": "Fishing", "description": "Catch fish and other aquatic creatures with both net and rod. Snag the lunker." },
+    { "name": "Mining", "description": "Identify and excavate rare metals and minerals. Dig deep." },
+    { "name": "Navigation", "description": "Determine and follow a course or maneuver through foreign terrain or seas. Stay the course." },
+    { "name": "Sailing", "description": "Navigate and operate a boat or ship. Ride the wind." },
+    { "name": "Scrivening", "description": "Copy or create written works and scrolls. Ink the page." },
+    { "name": "Smithing", "description": "Work with metal to create tools, weapons, and armor. Mold the metal." },
+    { "name": "Survival", "description": "Endure and thrive in harsh environments, hunt wild game. Conquer the wilds." },
+    { "name": "Tinkering", "description": "Craft, repair, and modify mechanical devices. Acknowledge the automatic." }
+  ],
+  "Weapons": [
+    { "name": "Short Blades" },
+    { "name": "Long Blades" },
+    { "name": "Bludgeons" },
+    { "name": "Axes" },
+    { "name": "Polearms" },
+    { "name": "Shields" },
+    { "name": "Bows" },
+    { "name": "Crossbows" },
+    { "name": "Flintlocks" }
+  ],
+  "Spell Catalysts": [
+    { "name": "Component Pouch", "description": "floral catalyst" },
+    { "name": "Staves", "description": "arcane catalyst" },
+    { "name": "Wands", "description": "arcane catalyst" },
+    { "name": "Talismans", "description": "holy/shadow catalyst" },
+    { "name": "Totems", "description": "nature catalyst" }
+  ],
+  "Armor": [
+    { "name": "Light" },
+    { "name": "Medium" },
+    { "name": "Heavy" }
+  ]
+} 

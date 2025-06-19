@@ -1,0 +1,388 @@
+{
+  "spells": [
+    {
+      "tier": 1,
+      "name": "Entangle",
+      "description": "Choose a tile within 6 tiles of you. Beckon entangling roots to emerge from the earth, inflicting the Root status effect on any creature who stands on that tile and fails a STR/AGL contest against your MND. May target an additional tile for each additional exhaustion taken.",
+      "cost": "1 + X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Lightning Bolt",
+      "description": "Choose a creature within 6 tiles. A bolt of lightning erupts from your totem and zaps the target for 2d6 lightning damage per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Earth Aura",
+      "description": "Raise up 3 rocky shards that spin around you. Any enemy that attacks you in melee range takes 1d4 damage per exhaustion spent. When an enemy takes damage from this effect, one of the shards breaks.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Healing Stream",
+      "description": "Heal a creature you can see within 8 tiles for 1d6 per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Bramble Lash",
+      "description": "You summon a thorny vine to strike at a target. Target a creature within 6 tiles. You deal 1d4 piercing damage per exhaustion taken and inflict the Hobbled (2) status.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Spirit of the Wind",
+      "description": "Bestow the swiftness of the wind upon an ally. Target an ally within 6 tiles. They gain +2 MVMT per exhaustion taken until the end of their next turn and ignore difficult terrain.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Aqua Ring",
+      "description": "Heal all adjacent creatures for 1d4 per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Raise Earth",
+      "description": "You raise two large masses of earth, creating cover in 2 tiles within 6 tiles of you. If the tiles are occupied the creatures in those tiles take 1d6 damage and are knocked back 1 tile.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Moonfire",
+      "description": "Choose a tile within 6 tiles. Call down a beam of frost from the moon above, dealing 1d6 frost damage per exhaustion taken and inflicting the Frozen status on the target. Double the damage when cast at night.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Sunfire",
+      "description": "Choose a tile within 6 tiles. Call down a beam of fire from the sun, dealing 1d6 fire damage per exhaustion taken and inflicting the Burned (1) status on the target. Double the damage when cast during the day.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Barkskin",
+      "description": "Grant a creature you can see within 6 tiles barrier and armor equal to 2x the amount of exhaustion taken. (ex: 1 exhaustion taken grants 2 barrier and 2 armor)",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Healing Rush",
+      "description": "Heal all creatures in a 1x3 tile adjacent to the player for 1d8 per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Choking Spores",
+      "description": "Call forth a burst of toxic spores. Creatures in a 2x2 tile within 6 tiles must roll a VIG against your MND or become Poisoned (value = exhaustion taken).",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Gale Burst",
+      "description": "Unleash a sudden gust of wind, pushing all creatures in the 3 tiles in front of you 1 tile per exhaustion taken. Creatures who hit walls, objects, or other creatures take 1d6 damage.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Earthquake",
+      "description": "Choose a 4x4 tile within 4 tiles of you. The ground of the specified area begins to shudder and shake, turning into difficult terrain. All creatures within the area must make Reflex (AGL) contest against your MND. On fail they take 1d4 damage and are knocked prone.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Chain Lightning",
+      "description": "Choose a creature within 6 tiles. Lightning erupts from your totem and surges through your target, dealing 2d6 lightning damage per exhaustion taken. The lightning chains to any other creature within 2 tiles of the last creature hit, dealing -1 damage for each jump. The chain can affect no more than 4 targets.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Mass Entangle",
+      "description": "Choose a 2x2 tile within 6 tiles of you. Beckon entangling roots to emerge from the earth, inflicting the Root status effect on any creatures within the area and fails a Brawn (STR) contest against your MND.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Thunderstorm",
+      "description": "You call down lightning from the air above an area of the battlefield. For each exhaustion taken you may target a 2x2 tile and deal 2d8 lightning damage to the creatures within. You may take up to 5 exhaustion on this spell.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 5
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Healing Wave",
+      "description": "Heal all creatures in a 1x5 tile adjacent to the player for 1d10 per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Healing Rain",
+      "description": "Choose a 3x3 tile within 5 tiles of you. All creatures within heal for 1d8 per exhaustion taken.",
+      "cost": "X",
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 4,
+      "name": "Tempest",
+      "description": "Create a storm of an element of your choosing (Fire, Frost, Lightning, Poison, Acid, Nature) that deals 1d8 damage to all creatures within a 3x3 tile within 6 tiles. The storm lasts until the end of the combat or until you dismiss it, and deals its damage at the beginning of each of your subsequent turns. Only one storm may be active at a time, and as your action on subsequent turns you may expend one point of exhaustion to move the storm.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 7
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Speak with Animals",
+      "description": "Allows the caster to speak with animals for 10 minutes.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1,
+          "Animal Intuition": 1
+        }
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Shape Water",
+      "description": "Create or destroy up to 10 gallons of water, and/or change the flow of water in a 5 foot cube",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Orb of Light",
+      "description": "Create an orb of light that shines bright light in a 20ft radius and dim light an additional 20ft. The orb remains anywhere you place it for 6 turns or until dismissed and can be moved at will.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Gust",
+      "description": "Conjure a gust of wind 5ft wide that travels in a straight line for 30ft. Any creatures caught in it must roll a Brawn (STR) contest against your MND. On failure they are pushed back 5ft. Any small objects are knocked aside. The caster may choose to reduce the power of this spell.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Mossstep",
+      "description": "Silence your movement and those of allies within 10ft. For 10 minutes, movement makes no sound.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 1
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 1,
+      "name": "Animal Companion 1",
+      "description": "You give up an active ability in order to adopt an animal companion.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 1,
+          "Animal Intuition": 1
+        }
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Roothome",
+      "description": "Roots and vines sprout up from the ground, providing a 10ft x 10ft waterproof structure.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Verdant Growth",
+      "description": "Cause vines, moss, and brush to rapidly grow in a 10ft square. Can be used to obscure terrain or create soft landing spots.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Natural Passage",
+      "description": "You meld into a tree and appear from another tree of the same type within 100ft.",
+      "cost": 1,
+      "requirements": {
+        "attributes": {
+          "MND": 3
+        },
+        "equipment": ["Totem"]
+      }
+    },
+    {
+      "tier": 2,
+      "name": "Animal Companion 2",
+      "description": "You give up an active ability in order to train your animal companion. This ability can replace Animal Companion 1.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 3,
+          "Animal Intuition": 5
+        }
+      }
+    },
+    {
+      "tier": 3,
+      "name": "Animal Companion 3",
+      "description": "You give up an active ability in order to further train your animal companion. This ability can replace Animal Companion 2.",
+      "cost": 0,
+      "requirements": {
+        "attributes": {
+          "MND": 6,
+          "Animal Intuition": 8
+        }
+      }
+    }
+  ]
+} 
