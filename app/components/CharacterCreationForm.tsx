@@ -55,7 +55,11 @@ const useAncestriesList = () => {
   return ancestriesList;
 };
 
-export const CharacterCreationForm = () => {
+interface CharacterCreationFormProps {
+  onCharacterCreated: (character: any) => void;
+}
+
+export const CharacterCreationForm = ({ onCharacterCreated }: CharacterCreationFormProps) => {
   // All state for the form
   const [stage, setStage] = useState(0);
   // Attribute assignment
@@ -98,7 +102,6 @@ export const CharacterCreationForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [characters, setCharacters] = useState<any[]>([]);
   const [deleteIdx, setDeleteIdx] = useState<number | null>(null);
-  const [isCreating, setIsCreating] = useState(false);
   const [selectedCharacterIdx, setSelectedCharacterIdx] = useState<number | null>(null);
   const [notes, setNotes] = useState("");
   const [showSaved, setShowSaved] = useState(false);
@@ -209,7 +212,7 @@ export const CharacterCreationForm = () => {
     if (selectedCharacterIdx === idx) setSelectedCharacterIdx(null);
   };
 
-  // Save character to localStorage on submit
+  // Save character and call callback on submit
   const handleSubmit = () => {
     const newChar = {
       name,
@@ -224,19 +227,43 @@ export const CharacterCreationForm = () => {
       notes: "",
       created: Date.now(),
     };
-    const updated = [newChar, ...characters];
-    setCharacters(updated);
-    if (typeof window !== "undefined") {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-    }
+    onCharacterCreated(newChar);
     setSubmitted(true);
-    setIsCreating(false);
-    setSelectedCharacterIdx(0); // Show the newly created character
+  };
+
+  // Handle viewing the newly created character
+  const handleViewCharacter = () => {
+    const newChar = {
+      name,
+      ancestry,
+      background,
+      attributes,
+      derivedStats,
+      skills,
+      kit,
+      abilities,
+      traits,
+      notes: "",
+      created: Date.now(),
+    };
+    
+    // Add to characters list
+    const updatedCharacters = [...characters, newChar];
+    setCharacters(updatedCharacters);
+    
+    // Save to localStorage
+    if (typeof window !== "undefined") {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedCharacters));
+    }
+    
+    // Select the new character for viewing
+    setSelectedCharacterIdx(updatedCharacters.length - 1);
+    setSubmitted(false);
   };
 
   // When switching from creating to viewing, save the current creation state
   useEffect(() => {
-    if (!isCreating) {
+    if (selectedCharacterIdx !== null) {
       creationStateRef.current = stage === 0 
       ? null
       : {
@@ -253,11 +280,11 @@ export const CharacterCreationForm = () => {
         name,
       };
     }
-  }, [isCreating]);
+  }, [selectedCharacterIdx]);
 
   // When switching back to creating, restore the saved creation state if available
   useEffect(() => {
-    if (isCreating && creationStateRef.current) {
+    if (selectedCharacterIdx === null && creationStateRef.current) {
       const s = creationStateRef.current;
       setStage(s.stage);
       setAttributes(s.attributes);
@@ -271,7 +298,7 @@ export const CharacterCreationForm = () => {
       setTraits(s.traits);
       setName(s.name);
     }
-  }, [isCreating]);
+  }, [selectedCharacterIdx]);
 
   // Only reset state when starting a new character
   const startNewCharacter = () => {
@@ -286,7 +313,6 @@ export const CharacterCreationForm = () => {
     setAttributes({STR:0,AGL:0,MND:0,VIG:0});
     setAttributeMethod(null);
     setSubmitted(false);
-    setIsCreating(true);
     setSelectedCharacterIdx(null);
     creationStateRef.current = null;
   };
@@ -309,190 +335,212 @@ export const CharacterCreationForm = () => {
         <h2 className="text-2xl font-bold mb-2">Character Created!</h2>
         <p className="mb-4">Your character <span className="font-semibold">{name}</span> has been created.</p>
         <div className="flex flex-col sm:flex-row gap-2 justify-center">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed" onClick={startNewCharacter}>Create Another</button>
-          <button className="bg-gray-700 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed" onClick={() => { setSubmitted(false); setIsCreating(false); creationStateRef.current = null; }}>View Character</button>
+          <button 
+            className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed" 
+            onClick={() => {
+              setStage(0);
+              setName("");
+              setTraits([]);
+              setAbilities([]);
+              setKit("");
+              setSkills([]);
+              setBackground("");
+              setAncestry("");
+              setAttributes({STR:0,AGL:0,MND:0,VIG:0});
+              setAttributeMethod(null);
+              setSubmitted(false);
+            }}
+          >
+            Create Another
+          </button>
+          <button
+            className="bg-green-600 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+            onClick={handleViewCharacter}
+            disabled={false}
+          >
+            View Character
+          </button>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="w-full flex flex-col md:flex-row gap-8 items-start justify-center">
-      {/* Character List Section */}
-      <div className="flex-1 max-w-xs w-full p-6 bg-gray-50 dark:bg-zinc-800 rounded shadow mt-4 md:mt-0 overflow-y-auto">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-gray-500 dark:text-zinc-300">Saved Characters</h2>
-          <div className="flex gap-2 flex-wrap justify-end">
-            <button
-              className="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              onClick={startNewCharacter}
-              disabled={false}
-            >
-              Create
-            </button>
-            <button
-              className="px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              onClick={() => { setIsCreating(true); setSelectedCharacterIdx(null); }}
-              disabled={!creationStateRef.current || isCreating}
-            >
-              Resume
-            </button>
-          </div>
-        </div>
-        {characters.length === 0 && <div className="text-gray-400">No characters yet.</div>}
-        <ul className="space-y-3">
-          {characters.map((char, idx) => (
-            <li
-              key={char.created || idx}
-              className={`p-3 rounded border bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-700 relative group cursor-pointer ${selectedCharacterIdx === idx ? 'ring-2 ring-blue-400' : ''}`}
-              onClick={() => { setSelectedCharacterIdx(idx); setIsCreating(false); }}
-            >
+    <div className="min-h-screen bg-zinc-900 py-8">
+      <div className="w-full flex flex-col md:flex-row gap-8 items-start justify-center">
+        {/* Character List Section */}
+        <div className="flex-1 max-w-xs w-full p-6 bg-gray-50 dark:bg-zinc-800 rounded shadow mt-4 md:mt-0 overflow-y-auto">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-bold text-gray-500 dark:text-zinc-300">Saved Characters</h2>
+            <div className="flex gap-2 flex-wrap justify-end">
               <button
-                className="absolute top-2 right-2 text-red-500 hover:text-red-700 text-lg font-bold opacity-80 hover:opacity-100 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
-                aria-label="Delete character"
-                onClick={e => { e.stopPropagation(); setDeleteIdx(idx); }}
+                className="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                onClick={startNewCharacter}
                 disabled={false}
               >
-                ×
+                Create
               </button>
-              <div className="font-bold text-blue-700 dark:text-blue-300">{char.name || <span className="text-gray-400">(no name)</span>}</div>
-              <div className="text-sm text-gray-600 dark:text-zinc-300">{char.ancestry || <span className="text-gray-400">(no ancestry)</span>}</div>
-              <div className="text-sm text-gray-600 dark:text-zinc-300">{char.background || <span className="text-gray-400">(no background)</span>}</div>
-            </li>
-          ))}
-        </ul>
-        <ConfirmDeletePrompt
-          open={deleteIdx !== null}
-          onCancel={() => setDeleteIdx(null)}
-          onConfirm={() => deleteIdx !== null && handleDelete(deleteIdx)}
-          characterName={deleteIdx !== null && characters[deleteIdx] ? characters[deleteIdx].name : "this character"}
-        />
-      </div>
-      {/* Center Section: Form or Details or Message */}
-      <div className={`flex-1 mx-auto p-8 bg-zinc-900 rounded shadow flex flex-col gap-6 min-h-[400px] transition-all duration-300 ${selectedCharacterIdx !== null && !isCreating ? 'max-w-4xl' : 'max-w-2xl'}`}>
-        {!isCreating && selectedCharacterIdx === null && (
-          <div className="flex flex-col items-center justify-center h-full text-center text-gray-500 dark:text-zinc-300">
-            <div className="text-xl font-semibold mb-2">Select an existing character or create a new one</div>
+              <button
+                className="px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                onClick={() => { setSelectedCharacterIdx(null); }}
+                disabled={!creationStateRef.current || selectedCharacterIdx === null}
+              >
+                Resume
+              </button>
+            </div>
           </div>
-        )}
-        {isCreating && !submitted && (
-          <>
-            <h1 className="text-2xl font-bold mb-4 dark:text-zinc-100">Create Your Character</h1>
-            {stage === 0 && (
-              <AttributeStage
-                attributes={attributes}
-                setAttributes={setAttributes}
-                attributeMethod={attributeMethod}
-                setAttributeMethod={setAttributeMethod}
-                onNext={() => setStage(1)}
-                progress={progress}
-                helpText={helpTexts[0]}
-              />
-            )}
-            {stage === 1 && (
-              <AncestryStage
-                ancestry={ancestry}
-                setAncestry={setAncestry}
-                onNext={() => setStage(2)}
-                onBack={() => setStage(0)}
-                progress={progress}
-                helpText={helpTexts[1]}
-              />
-            )}
-            {stage === 2 && (
-              <DerivedStatsStage
-                derivedStats={derivedStats}
-                onNext={() => setStage(3)}
-                onBack={() => setStage(1)}
-                progress={progress}
-                helpText={helpTexts[2]}
-              />
-            )}
-            {stage === 3 && (
-              <BackgroundStage
-                background={background}
-                setBackground={setBackground}
-                onNext={() => setStage(4)}
-                onBack={() => setStage(2)}
-                progress={progress}
-                helpText={helpTexts[3]}
-              />
-            )}
-            {stage === 4 && (
-              <SkillsStage
-                skills={skills}
-                setSkills={setSkills}
-                onNext={() => setStage(5)}
-                onBack={() => setStage(3)}
-                progress={progress}
-                helpText={helpTexts[4]}
-              />
-            )}
-            {stage === 5 && (
-              <KitStage
-                kit={kit}
-                setKit={setKit}
-                onNext={() => setStage(6)}
-                onBack={() => setStage(4)}
-                progress={progress}
-                helpText={helpTexts[5]}
-              />
-            )}
-            {stage === 6 && (
-              <AbilitiesStage
-                abilities={abilities}
-                attributes={attributes}
-                setAbilities={setAbilities}
-                memory={derivedStats.Memory}
-                onNext={() => setStage(7)}
-                onBack={() => setStage(5)}
-                progress={progress}
-                helpText={helpTexts[6]}
-                ancestryBonus={ancestryBonus}
-              />
-            )}
-            {stage === 7 && (
-              <TraitsStage
-                ancestry={ancestry}
-                traits={traits}
-                setTraits={setTraits}
-                name={name}
-                setName={setName}
-                onBack={() => setStage(6)}
-                onSubmit={handleSubmit}
-                progress={progress}
-                helpText={helpTexts[7]}
-              />
-            )}
-          </>
-        )}
-        {selectedCharacterIdx !== null && !isCreating && characters[selectedCharacterIdx] && (
-          <SelectedCharacterDisplay
-            character={characters[selectedCharacterIdx]}
-            ancestriesList={ancestriesList}
-            backgrounds={backgrounds}
-            kits={kits}
-            notes={notes}
-            handleNotesChange={handleNotesChange}
-            showSaved={showSaved}
+          {characters.length === 0 && <div className="text-gray-400">No characters yet.</div>}
+          <ul className="space-y-3">
+            {characters.map((char, idx) => (
+              <li
+                key={char.created || idx}
+                className={`p-3 rounded border bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-700 relative group cursor-pointer ${selectedCharacterIdx === idx ? 'ring-2 ring-blue-400' : ''}`}
+                onClick={() => { setSelectedCharacterIdx(idx); }}
+              >
+                <button
+                  className="absolute top-2 right-2 text-red-500 hover:text-red-700 text-lg font-bold opacity-80 hover:opacity-100 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+                  aria-label="Delete character"
+                  onClick={e => { e.stopPropagation(); setDeleteIdx(idx); }}
+                  disabled={false}
+                >
+                  ×
+                </button>
+                <div className="font-bold text-blue-700 dark:text-blue-300">{char.name || <span className="text-gray-400">(no name)</span>}</div>
+                <div className="text-sm text-gray-600 dark:text-zinc-300">{char.ancestry || <span className="text-gray-400">(no ancestry)</span>}</div>
+                <div className="text-sm text-gray-600 dark:text-zinc-300">{char.background || <span className="text-gray-400">(no background)</span>}</div>
+              </li>
+            ))}
+          </ul>
+          <ConfirmDeletePrompt
+            open={deleteIdx !== null}
+            onCancel={() => setDeleteIdx(null)}
+            onConfirm={() => deleteIdx !== null && handleDelete(deleteIdx)}
+            characterName={deleteIdx !== null && characters[deleteIdx] ? characters[deleteIdx].name : "this character"}
+          />
+        </div>
+
+        {/* Center Section: Form or Details or Message */}
+        <div className={`flex-1 mx-auto p-8 bg-zinc-900 rounded shadow flex flex-col gap-6 min-h-[400px] transition-all duration-300 ${selectedCharacterIdx !== null ? 'max-w-4xl' : 'max-w-2xl'}`}>
+          {selectedCharacterIdx === null && (
+            <>
+              <h1 className="text-2xl font-bold mb-4 dark:text-zinc-100">Create Your Character</h1>
+              {stage === 0 && (
+                <AttributeStage
+                  attributes={attributes}
+                  setAttributes={setAttributes}
+                  attributeMethod={attributeMethod}
+                  setAttributeMethod={setAttributeMethod}
+                  onNext={() => setStage(1)}
+                  progress={progress}
+                  helpText={helpTexts[0]}
+                />
+              )}
+              {stage === 1 && (
+                <AncestryStage
+                  ancestry={ancestry}
+                  setAncestry={setAncestry}
+                  onNext={() => setStage(2)}
+                  onBack={() => setStage(0)}
+                  progress={progress}
+                  helpText={helpTexts[1]}
+                />
+              )}
+              {stage === 2 && (
+                <DerivedStatsStage
+                  derivedStats={derivedStats}
+                  onNext={() => setStage(3)}
+                  onBack={() => setStage(1)}
+                  progress={progress}
+                  helpText={helpTexts[2]}
+                />
+              )}
+              {stage === 3 && (
+                <BackgroundStage
+                  background={background}
+                  setBackground={setBackground}
+                  onNext={() => setStage(4)}
+                  onBack={() => setStage(2)}
+                  progress={progress}
+                  helpText={helpTexts[3]}
+                />
+              )}
+              {stage === 4 && (
+                <SkillsStage
+                  skills={skills}
+                  setSkills={setSkills}
+                  onNext={() => setStage(5)}
+                  onBack={() => setStage(3)}
+                  progress={progress}
+                  helpText={helpTexts[4]}
+                />
+              )}
+              {stage === 5 && (
+                <KitStage
+                  kit={kit}
+                  setKit={setKit}
+                  onNext={() => setStage(6)}
+                  onBack={() => setStage(4)}
+                  progress={progress}
+                  helpText={helpTexts[5]}
+                />
+              )}
+              {stage === 6 && (
+                <AbilitiesStage
+                  abilities={abilities}
+                  attributes={attributes}
+                  setAbilities={setAbilities}
+                  memory={derivedStats.Memory}
+                  onNext={() => setStage(7)}
+                  onBack={() => setStage(5)}
+                  progress={progress}
+                  helpText={helpTexts[6]}
+                  ancestryBonus={ancestryBonus}
+                />
+              )}
+              {stage === 7 && (
+                <TraitsStage
+                  ancestry={ancestry}
+                  traits={traits}
+                  setTraits={setTraits}
+                  name={name}
+                  setName={setName}
+                  onBack={() => setStage(6)}
+                  onSubmit={handleSubmit}
+                  progress={progress}
+                  helpText={helpTexts[7]}
+                />
+              )}
+            </>
+          )}
+          {selectedCharacterIdx !== null && characters[selectedCharacterIdx] && (
+            <SelectedCharacterDisplay
+              character={characters[selectedCharacterIdx]}
+              ancestriesList={ancestriesList}
+              backgrounds={backgrounds}
+              kits={kits}
+              notes={notes}
+              handleNotesChange={handleNotesChange}
+              showSaved={showSaved}
+            />
+          )}
+        </div>
+        
+        {/* Live Summary Section */}
+        {selectedCharacterIdx === null && (
+          <CurrentSelection
+            name={name}
+            ancestry={ancestry}
+            background={background}
+            kit={kit}
+            attributes={attributes}
+            ancestryBonus={ancestryBonus}
+            derivedStats={derivedStats}
+            skills={skills}
+            abilities={abilities}
+            traits={traits}
           />
         )}
       </div>
-      {/* Live Summary Section */}
-      {isCreating && (
-        <CurrentSelection
-          name={name}
-          ancestry={ancestry}
-          background={background}
-          kit={kit}
-          attributes={attributes}
-          ancestryBonus={ancestryBonus}
-          derivedStats={derivedStats}
-          skills={skills}
-          abilities={abilities}
-          traits={traits}
-        />
-      )}
     </div>
   );
 }; 

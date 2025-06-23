@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FormStage } from "./FormStage";
 import { Modal } from "../Modal";
-import { RandomNameGenerator } from "../RandomNameGenerator";
+import { EnhancedRandomNameGenerator } from "../EnhancedRandomNameGenerator";
 import traitsData from "../../data/traits.json";
 
 type TraitsStageProps = {
@@ -20,7 +20,6 @@ type TraitsStageProps = {
 export const TraitsStage = ({ traits, setTraits, name, setName, onBack, onSubmit, progress, helpText, ancestry }: TraitsStageProps) => {
   const [generatedNames, setGeneratedNames] = useState<string[]>([]);
   const [currentIdx, setCurrentIdx] = useState<number>(-1);
-  const [gender, setGender] = useState<"male" | "female">(Math.random() < 0.5 ? "male" : "female");
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTrait, setModalTrait] = useState<any>(null);
 
@@ -30,7 +29,6 @@ export const TraitsStage = ({ traits, setTraits, name, setName, onBack, onSubmit
     setGeneratedNames([...newHistory, newName]);
     setCurrentIdx(newHistory.length);
     setName(newName);
-    setGender(Math.random() < 0.5 ? "male" : "female");
   };
 
   const goBack = () => {
@@ -89,7 +87,13 @@ export const TraitsStage = ({ traits, setTraits, name, setName, onBack, onSubmit
           placeholder="Enter your character's name"
         />
         <div className="flex items-center gap-2 mt-2">
-          <RandomNameGenerator ancestry={ancestry} gender={gender} onGenerate={handleGenerate} buttonOnly={true} />
+          <EnhancedRandomNameGenerator 
+            ancestry={ancestry} 
+            onGenerate={handleGenerate} 
+            buttonOnly={true}
+            showHumanType={true}
+            showGenderSelection={true}
+          />
           <button
             className="px-2 py-1 rounded border bg-gray-200 dark:bg-zinc-700 text-gray-700 dark:text-zinc-200 disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={goBack}
