@@ -106,9 +106,9 @@ export const Settings = () => {
             <div>
               <h2 className="text-xl font-semibold text-zinc-100 mb-4">About</h2>
               <div className="space-y-2 text-zinc-400">
-                <p><strong>Tempest 2 Character Creator</strong></p>
+                <p><strong> Tempest Character Creator</strong></p>
                 <p>Version 1.0.0</p>
-                <p>A tool for creating and managing characters for the Tempest 2 tabletop roleplaying game.</p>
+                <p>A tool for creating and managing characters for the Tempest tabletop roleplaying game.</p>
                 <p className="text-sm text-zinc-500 mt-4">
                   Built with Next.js, React, and Tailwind CSS
                 </p>

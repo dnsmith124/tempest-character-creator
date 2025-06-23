@@ -17,7 +17,7 @@ export const Navigation = ({ activeTab, onTabChange, characterCount }: Navigatio
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-zinc-100">Tempest 2</h1>
+            <h1 className="text-xl font-bold text-zinc-100">Tempest</h1>
           </div>
 
           {/* Navigation Tabs */}
