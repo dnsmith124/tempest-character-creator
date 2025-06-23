@@ -49,7 +49,7 @@ export const Navigation = ({ activeTab, onTabChange, characterCount }: Navigatio
               Name Generator
             </button>
             
-            <button
+            {/* <button
               onClick={() => onTabChange('settings')}
               className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                 activeTab === 'settings'
@@ -58,7 +58,7 @@ export const Navigation = ({ activeTab, onTabChange, characterCount }: Navigatio
               }`}
             >
               Settings
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

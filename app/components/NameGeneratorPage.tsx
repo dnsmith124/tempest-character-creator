@@ -10,7 +10,7 @@ export const NameGeneratorPage = () => {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-zinc-100 mb-4">Name Generator</h1>
             <p className="text-zinc-400">
-              Generate unique character names for your Tempest 2 adventures
+              Generate unique character names for your Tempest adventures
             </p>
           </div>
           
