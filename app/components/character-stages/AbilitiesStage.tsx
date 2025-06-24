@@ -1,17 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import { FormStage } from "./FormStage";
-import { Modal } from "../Modal";
-import martialAbilities from "../../data/abilities-martial.json";
-import nimbleAbilities from "../../data/abilities-nimble.json";
-import deadeyeAbilities from "../../data/abilities-deadeye.json";
-import arcaneSpells from "../../data/spells-arcane.json";
-import holySpells from "../../data/spells-holy.json";
-import shadowSpells from "../../data/spells-shadow.json";
-import druidicSpells from "../../data/spells-druidic.json";
-import fleuromancySpells from "../../data/spells-fleuromancy.json";
-import musicalAbilities from "../../data/abilities-musical.json";
-import passiveAbilities from "../../data/abilities-passive.json";
+import { FormStage } from "@/app/components/character-stages/FormStage";
+import { Modal } from "@/app/components/_common/Modal";
+import martialAbilities from "@/app/data/abilities-martial.json";
+import nimbleAbilities from "@/app/data/abilities-nimble.json";
+import deadeyeAbilities from "@/app/data/abilities-deadeye.json";
+import arcaneSpells from "@/app/data/spells-arcane.json";
+import holySpells from "@/app/data/spells-holy.json";
+import shadowSpells from "@/app/data/spells-shadow.json";
+import druidicSpells from "@/app/data/spells-druidic.json";
+import fleuromancySpells from "@/app/data/spells-fleuromancy.json";
+import musicalAbilities from "@/app/data/abilities-musical.json";
+import passiveAbilities from "@/app/data/abilities-passive.json";
 
 type Ability = {
   tier?: number;

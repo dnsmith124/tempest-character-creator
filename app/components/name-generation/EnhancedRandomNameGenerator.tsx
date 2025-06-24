@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNameGenerator } from "../hooks/useNameGenerator";
+import { useNameGenerator } from "@/app/hooks/useNameGenerator";
 
 interface EnhancedRandomNameGeneratorProps {
   ancestry: string;

@@ -1,0 +1,143 @@
+{
+  "abilities": [
+    {
+      "name": "Flee!!",
+      "description": "As a reaction once per combat this creature may disengage without incurring an AOO and flee a number of tiles equal to their MVMT.",
+      "type": "reaction",
+      "uses": "once per combat",
+      "role_suggestions": ["Ambusher", "Skirmisher"]
+    },
+    {
+      "name": "Pack Tactics",
+      "description": "This creature has advantage on attack rolls against a creature if at least one of the creature's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "type": "passive",
+      "role_suggestions": ["Soldier", "Ambusher"]
+    },
+    {
+      "name": "Multiattack",
+      "description": "The creature can make two attacks with its weapon.",
+      "type": "action",
+      "role_suggestions": ["Solo", "Brute"]
+    },
+    {
+      "name": "Rally",
+      "description": "As an action, this creature can rally its allies. All allies within 30 feet gain 1d4 temporary HP.",
+      "type": "action",
+      "role_suggestions": ["Leader", "Support"]
+    },
+    {
+      "name": "Terrifying Presence",
+      "description": "Each creature of the creature's choice that is within 120 feet of the creature and aware of it must succeed on a DC 15 MND saving throw or become frightened for 1 minute.",
+      "type": "action",
+      "role_suggestions": ["Solo", "Leader"]
+    },
+    {
+      "name": "Shield Bash",
+      "description": "Slam your shield into a creature within melee range, dealing 1d4 damage and possibly stunning it. The affected creature rolls a VIG contest against your STR. If you succeed the target takes on the Stunned (1) status.",
+      "type": "action",
+      "role_suggestions": ["Brute", "Soldier"]
+    },
+    {
+      "name": "Rallying Cry",
+      "description": "Let out a brave rallying cry that bolsters all allies in a 6 tile radius. Affected allies gain 1d4 + VIG temporary HP (roll for each ally).",
+      "type": "action",
+      "role_suggestions": ["Leader", "Support"]
+    },
+    {
+      "name": "Cleave",
+      "description": "Sweep your 2H weapon in a wide arc, striking up to 3 foes in front of you with a basic weapon attack.",
+      "type": "action",
+      "role_suggestions": ["Brute", "Solo"]
+    },
+    {
+      "name": "Retaliate",
+      "description": "Store up your rage, preparing to receive a powerful blow. After using this ability the next melee attack you receive has its damage cut in half (after applying your armor), and you may retaliate against the creature who attacked you with a basic melee weapon attack of your own.",
+      "type": "reaction",
+      "role_suggestions": ["Brute", "Solo"]
+    },
+    {
+      "name": "Taunt",
+      "description": "Shout a taunting insult at a target within 6 tiles. It rolls a MND contest against you, and you roll with advantage. If you succeed the target takes on the Taunted (MND) status.",
+      "type": "action",
+      "role_suggestions": ["Brute", "Controller"]
+    },
+    {
+      "name": "Shield Wall",
+      "description": "All adjacent allies receive +1 armor for as long as they remain adjacent to you. Remains active until the end of the current combat.",
+      "type": "passive",
+      "role_suggestions": ["Soldier", "Support"]
+    },
+    {
+      "name": "Rally",
+      "description": "Beckon yourself to fight on and overcome the pain. Regain 1d4 + VIG HP. This ability does not consume your action, and can only be performed once per turn.",
+      "type": "reaction",
+      "role_suggestions": ["Brute", "Support"]
+    },
+    {
+      "name": "Hardy",
+      "description": "(Passive) Gain 1 armor per VIG.",
+      "type": "passive",
+      "role_suggestions": ["Brute", "Soldier"]
+    },
+    {
+      "name": "Blood Rage",
+      "description": "(Passive) When you are below 1/2 health, you roll all melee attacks with advantage.",
+      "type": "passive",
+      "role_suggestions": ["Brute", "Solo"]
+    },
+    {
+      "name": "Whirlwind",
+      "description": "You become a whirlwind of pain, swinging your 2H weapon in a wide arc around yourself. Roll a basic weapon attack against all adjacent creatures.",
+      "type": "action",
+      "role_suggestions": ["Solo", "Brute"]
+    },
+    {
+      "name": "Charge",
+      "description": "Dash in a straight line to a creature within 4 spaces, then perform a basic weapon attack. If your attack deals damage after applying the target's armor, they are knocked back one space. If the space behind them is occupied or inaccessible, they take 1d4 damage instead.",
+      "type": "action",
+      "role_suggestions": ["Skirmisher", "Brute"]
+    },
+    {
+      "name": "Flanking Strike",
+      "description": "If you and an ally are both adjacent to the same enemy, use this ability to perform a basic melee weapon attack on that enemy. Your attack deals one extra die of damage.",
+      "type": "action",
+      "role_suggestions": ["Skirmisher", "Soldier"]
+    },
+    {
+      "name": "Execute",
+      "description": "Choose a creature within melee range. If that creature has 1/2 of its max HP or less, whenever you perform a basic melee attack against it you may spend 1 exhaustion to perform a second melee attack.",
+      "type": "passive",
+      "role_suggestions": ["Solo", "Brute"]
+    },
+    {
+      "name": "Defensive Stance",
+      "description": "Sacrifice your ability to deal damage in order to become a defensive powerhouse. All enemies who attack you roll damage with disadvantage, but you also roll your melee attacks with disadvantage. You may switch into and out of this stance without consuming your action, but may only switch once per turn.",
+      "type": "passive",
+      "role_suggestions": ["Brute", "Soldier"]
+    },
+    {
+      "name": "Reckless Stance",
+      "description": "Enter into a barbarous stance, sacrificing defense for all out fury. All melee attacks you make roll damage with advantage, but all creatures who attack you in melee also roll damage with advantage. You may switch into and out of this stance without consuming your action, but may only switch once per turn.",
+      "type": "passive",
+      "role_suggestions": ["Solo", "Brute"]
+    },
+    {
+      "name": "Battle Shout",
+      "description": "Bellow a battle shout that terrifies all foes within 2 tiles of you. Roll an Intimidation (STR) contest against your foes' VIG. The enemies roll as a group based on the enemy with the highest VIG. If you succeed all affected enemies take 1 extra damage from all sources until the end of the combat. (This ability does not consume your action)",
+      "type": "action",
+      "role_suggestions": ["Leader", "Solo"]
+    },
+    {
+      "name": "Boomerang",
+      "description": "Toss your weapon in a straight line 3 tiles long. It returns to your hand, dealing damage to all creatures in its path. Roll two basic weapon attacks against each creature in its path.",
+      "type": "action",
+      "role_suggestions": ["Artillery", "Skirmisher"]
+    },
+    {
+      "name": "Berserker's Fury",
+      "description": "Enter into a barbarous rage, making yourself immune to all damage until your next turn. If you've already used this ability in combat, roll a DC12 MND check. On fail you enter a blinding rage and move to and attack the nearest ally.",
+      "type": "action",
+      "role_suggestions": ["Solo", "Brute"]
+    }
+  ]
+} 

@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 
-export function Modal({ open, onClose, children }: { open: boolean; onClose: () => void; children: React.ReactNode }) {
+export function Modal({ open, onClose, children }: { open: boolean; onClose: () => void; children: ReactNode }) {
   useEffect(() => {
     if (!open) return;
     function handleKeyDown(e: KeyboardEvent) {

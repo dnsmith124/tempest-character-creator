@@ -1,19 +1,19 @@
 "use client";
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
-import { AttributeStage } from "./stages/AttributeStage";
-import { DerivedStatsStage } from "./stages/DerivedStatsStage";
-import { AncestryStage } from "./stages/AncestryStage";
-import { BackgroundStage } from "./stages/BackgroundStage";
-import { SkillsStage } from "./stages/SkillsStage";
-import { KitStage } from "./stages/KitStage";
-import { AbilitiesStage } from "./stages/AbilitiesStage";
-import { TraitsStage } from "./stages/TraitsStage";
-import { ConfirmDeletePrompt } from "./ConfirmDeletePrompt";
+import { AttributeStage } from "@/app/components/character-stages/AttributeStage";
+import { DerivedStatsStage } from "@/app/components/character-stages/DerivedStatsStage";
+import { AncestryStage } from "@/app/components/character-stages/AncestryStage";
+import { BackgroundStage } from "@/app/components/character-stages/BackgroundStage";
+import { SkillsStage } from "@/app/components/character-stages/SkillsStage";
+import { KitStage } from "@/app/components/character-stages/KitStage";
+import { AbilitiesStage } from "@/app/components/character-stages/AbilitiesStage";
+import { TraitsStage } from "@/app/components/character-stages/TraitsStage";
+import { ConfirmDeletePrompt } from "@/app/components/_common/ConfirmDeletePrompt";
 import debounce from "lodash.debounce";
-import kits from "../data/kits.json";
-import backgrounds from "../data/backgrounds.json";
-import { CurrentSelection } from "./CurrentSelection";
-import SelectedCharacterDisplay from "./SelectedCharacterDisplay";
+import kits from "@/app/data/kits.json";
+import backgrounds from "@/app/data/backgrounds.json";
+import { CurrentSelection } from "@/app/components/character-creation/CurrentSelection";
+import SelectedCharacterDisplay from "@/app/components/character-creation/SelectedCharacterDisplay";
 
 const TOTAL_STAGES = 8;
 const STORAGE_KEY = "tempest-characters";
@@ -50,7 +50,7 @@ const useAncestryBonus = (
 const useAncestriesList = () => {
   const [ancestriesList, setAncestriesList] = useState<{ name: string; effect: string; ability: string }[]>([]);
   useEffect(() => {
-    import("../data/ancestries.json").then((mod) => setAncestriesList(mod.default || mod));
+    import("@/app/data/ancestries.json").then((mod) => setAncestriesList(mod.default || mod));
   }, []);
   return ancestriesList;
 };
@@ -176,7 +176,7 @@ export const CharacterCreationForm = ({ onCharacterCreated }: CharacterCreationF
   // Ensure background skill is always included in skills
   useEffect(() => {
     if (!background) return;
-    import("../data/backgrounds.json").then((mod) => {
+    import("@/app/data/backgrounds.json").then((mod) => {
       const backgrounds = mod.default || mod;
       const bg = backgrounds.find((b: any) => b.name === background);
       const prevBg = backgrounds.find((b: any) => b.name === prevBackground);

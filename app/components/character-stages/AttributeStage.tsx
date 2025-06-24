@@ -1,6 +1,6 @@
 "use client";
-import { FormStage } from "./FormStage";
 import { useState } from "react";
+import { FormStage } from "@/app/components/character-stages/FormStage";
 
 type AttributeStageProps = {
   attributes: { STR: number; AGL: number; MND: number; VIG: number };

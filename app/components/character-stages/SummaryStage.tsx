@@ -1,5 +1,5 @@
 "use client";
-import { FormStage } from "./FormStage";
+import { FormStage } from "@/app/components/character-stages/FormStage";
 
 type SummaryStageProps = {
   name: string;

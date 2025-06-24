@@ -1,0 +1,15 @@
+{
+  "damage_types": [
+    "Physical",
+    "Arcane", 
+    "Fire",
+    "Frost",
+    "Lightning",
+    "Poison",
+    "Acid",
+    "Holy",
+    "Shadow",
+    "Nature",
+    "Necrotic"
+  ]
+} 

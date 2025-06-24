@@ -19,8 +19,8 @@ export const RandomNameGenerator: React.FC<RandomNameGeneratorProps> = ({ ancest
     setLoading(true);
     try {
       const data = gender === "male"
-        ? await import("../data/male_name_fragments.json")
-        : await import("../data/female_name_fragments.json");
+        ? await import("@/app/data/male_name_fragments.json")
+        : await import("@/app/data/female_name_fragments.json");
       const fragments: Record<string, any> = data.default || data;
       const frag = fragments[ancestry];
       if (!frag) {

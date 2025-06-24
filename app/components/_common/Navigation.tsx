@@ -1,8 +1,5 @@
 "use client";
-
-import { useState } from 'react';
-
-export type NavigationTab = 'characters' | 'name-generator' | 'settings';
+export type NavigationTab = 'characters' | 'name-generator' | 'creatures' | 'settings';
 
 interface NavigationProps {
   activeTab: NavigationTab;
@@ -47,6 +44,17 @@ export const Navigation = ({ activeTab, onTabChange, characterCount }: Navigatio
               }`}
             >
               Name Generator
+            </button>
+
+            <button
+              onClick={() => onTabChange('creatures')}
+              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                activeTab === 'creatures'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-zinc-300 hover:text-white hover:bg-zinc-700'
+              }`}
+            >
+              Creatures
             </button>
             
             {/* <button

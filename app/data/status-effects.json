@@ -1,0 +1,117 @@
+{
+  "status_effects": [
+    {
+      "name": "Poison",
+      "description": "Inflicts poison damage at the start of the creature's turn.",
+      "clear_method": "Consume antidote, end of combat",
+      "damage_type": "Poison"
+    },
+    {
+      "name": "Stun",
+      "description": "Temporarily incapacitates the target, preventing actions.",
+      "clear_method": "Wait til effect expires, end of combat"
+    },
+    {
+      "name": "Sleep",
+      "description": "Puts the target into a deep sleep, rendering them unconscious until hit.",
+      "clear_method": "Take damage or be awoken by ally"
+    },
+    {
+      "name": "Burn",
+      "description": "Inflicts fire damage at the start of the creature's turn.",
+      "clear_method": "Be doused with water, consume aqual essence, end combat",
+      "damage_type": "Fire"
+    },
+    {
+      "name": "Freeze",
+      "description": "Slows the target, reducing their MVMT to 1.",
+      "clear_method": "Drink alcohol, end combat"
+    },
+    {
+      "name": "Hobble",
+      "description": "Cripples the target, reducing their MVMT by half.",
+      "clear_method": "Receive healing from a spell or potion, long rest"
+    },
+    {
+      "name": "Blind",
+      "description": "Prevents the target from seeing, requires a successful Perception check to land attacks.",
+      "clear_method": "Wipe your eyes with a cloth (if applied physically), experience dispel effect (if applied magically), end of combat/leave area (if cloud)."
+    },
+    {
+      "name": "Charm",
+      "description": "Makes the target friendly.",
+      "clear_method": "DC15 MND check, end of combat"
+    },
+    {
+      "name": "Confuse",
+      "description": "Causes the target to act erratically and attack allies.",
+      "clear_method": "DC15 MND check (on fail attack nearest ally), end of combat"
+    },
+    {
+      "name": "Fear",
+      "description": "Forces the target to flee to avoid the source of fear.",
+      "clear_method": "DC15 MND check, one turn, end of combat"
+    },
+    {
+      "name": "Silence",
+      "description": "Prevents the target from casting spells.",
+      "clear_method": "Leave silence area (if area), consume Potion of Dispel (if individually applied), DC18 MND check, end of combat"
+    },
+    {
+      "name": "Bleed",
+      "description": "Inflicts physical damage at the start of the creature's turn.",
+      "clear_method": "Receive healing, end of combat",
+      "damage_type": "Physical"
+    },
+    {
+      "name": "Curse",
+      "description": "Increases damage taken from all sources.",
+      "clear_method": "End of combat"
+    },
+    {
+      "name": "Petrify",
+      "description": "Turns the target to stone.",
+      "clear_method": "Consume Potion of Antipetrification"
+    },
+    {
+      "name": "Root",
+      "description": "Prevents the target from moving.",
+      "clear_method": "DC15 Brawn/Reflex check, end of combat"
+    },
+    {
+      "name": "Disarm",
+      "description": "Unequips the target's currently equipped weapon(s).",
+      "clear_method": "Pick up and reequip weapon"
+    },
+    {
+      "name": "Exhaust",
+      "description": "Causes the target to take an extra point of exhaustion each time they take exhaustion.",
+      "clear_method": "Long rest"
+    },
+    {
+      "name": "Taunt",
+      "description": "Forces the target to attack a specific character.",
+      "clear_method": "DC15 MND check, end of combat"
+    },
+    {
+      "name": "Hungry",
+      "description": "Reduces inventory slots by 1 per missed meal.",
+      "clear_method": "Eat a meal"
+    },
+    {
+      "name": "Weaken",
+      "description": "Target has disadvantage on damage rolls",
+      "clear_method": "DC15 STR check, end of combat"
+    },
+    {
+      "name": "Prone",
+      "description": "Knocked to the ground. Attacks against you roll with advantage.",
+      "clear_method": "Spend your MVMT to stand up, end of combat."
+    },
+    {
+      "name": "Sunder",
+      "description": "Your armor is reduced by a specified amount, either due to physical damage or corrosion.",
+      "clear_method": "Clean or repair the armor (depends on the source of the effect)."
+    }
+  ]
+} 

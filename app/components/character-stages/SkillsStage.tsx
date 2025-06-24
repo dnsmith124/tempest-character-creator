@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FormStage } from "./FormStage";
+import { FormStage } from "@/app/components/character-stages/FormStage";
 
 export const SkillsStage = ({ skills, setSkills, onNext, onBack, progress, helpText }: any) => {
   const [skillData, setSkillData] = useState<any>(null);

@@ -1,5 +1,5 @@
-import React from "react";
-import traitsData from "../data/traits.json";
+import { FC } from "react";
+import traitsData from "@/app/data/traits.json";
 
 interface CurrentSelectionProps {
   name: string;
@@ -14,7 +14,7 @@ interface CurrentSelectionProps {
   traits: string[];
 }
 
-export const CurrentSelection: React.FC<CurrentSelectionProps> = ({
+export const CurrentSelection: FC<CurrentSelectionProps> = ({
   name,
   ancestry,
   background,

@@ -1,0 +1,58 @@
+{
+  "roles": [
+    {
+      "name": "Ambusher",
+      "description": "Creatures that utilize surprise and stealth.",
+      "typical_attributes": ["AGL", "MND"],
+      "typical_abilities": ["stealth", "surprise"]
+    },
+    {
+      "name": "Artillery", 
+      "description": "Creatures that fight best from afar, use ranged attacks.",
+      "typical_attributes": ["AGL", "MND"],
+      "typical_abilities": ["ranged", "positioning"]
+    },
+    {
+      "name": "Brute",
+      "description": "Hardy creatures with lots of hp and/or armor/barrier.",
+      "typical_attributes": ["STR", "VIG"],
+      "typical_abilities": ["tank", "damage"]
+    },
+    {
+      "name": "Controller",
+      "description": "Creatures who rely on crowd control to debuff, move and obstruct enemies.",
+      "typical_attributes": ["MND", "VIG"],
+      "typical_abilities": ["control", "debuff"]
+    },
+    {
+      "name": "Leader",
+      "description": "Creatures whose power can come from directing, buffing, or summoning underlings.",
+      "typical_attributes": ["MND", "VIG"],
+      "typical_abilities": ["buff", "summon"]
+    },
+    {
+      "name": "Skirmisher",
+      "description": "Creatures who are mobile and make the most of good positioning.",
+      "typical_attributes": ["AGL", "STR"],
+      "typical_abilities": ["mobility", "positioning"]
+    },
+    {
+      "name": "Solo",
+      "description": "Action-oriented creatures who can take on multiple PCs by themselves.",
+      "typical_attributes": ["STR", "VIG"],
+      "typical_abilities": ["multi-action", "damage"]
+    },
+    {
+      "name": "Soldier",
+      "description": "Creatures who are the standard rank-and-file.",
+      "typical_attributes": ["STR", "VIG"],
+      "typical_abilities": ["basic", "formation"]
+    },
+    {
+      "name": "Support",
+      "description": "Creatures who aid their allies through buffs, healing, movement, etc.",
+      "typical_attributes": ["MND", "VIG"],
+      "typical_abilities": ["heal", "buff"]
+    }
+  ]
+} 

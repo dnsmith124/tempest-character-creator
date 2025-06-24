@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FormStage } from "./FormStage";
-import { Modal } from "../Modal";
+import { FormStage } from "@/app/components/character-stages/FormStage";
+import { Modal } from "@/app/components/_common/Modal";
 
 export const AncestryStage = ({ ancestry, setAncestry, onNext, onBack, progress, helpText }: any) => {
   const [ancestries, setAncestries] = useState<any[]>([]);

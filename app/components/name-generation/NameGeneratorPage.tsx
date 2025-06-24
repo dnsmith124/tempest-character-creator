@@ -1,6 +1,6 @@
 "use client";
 
-import { StandaloneNameGenerator } from "./StandaloneNameGenerator";
+import { StandaloneNameGenerator } from "@/app/components/name-generation/StandaloneNameGenerator";
 
 export const NameGeneratorPage = () => {
   return (

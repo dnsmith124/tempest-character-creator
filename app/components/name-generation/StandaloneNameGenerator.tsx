@@ -1,6 +1,6 @@
 "use client";
 import { FC, useEffect, useState } from "react";
-import { useNameGenerator } from "../hooks/useNameGenerator";
+import { useNameGenerator } from "@/app/hooks/useNameGenerator";
 
 interface StandaloneNameGeneratorProps {
   className?: string;
@@ -25,7 +25,7 @@ export const StandaloneNameGenerator: FC<StandaloneNameGeneratorProps> = ({ clas
   useEffect(() => {
     const loadAncestries = async () => {
       try {
-        const data = await import("../data/ancestries.json");
+        const data = await import("@/app/data/ancestries.json");
         setAncestries(data.default || data);
       } catch (e) {
         console.error("Error loading ancestries:", e);

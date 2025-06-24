@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import { FormStage } from "./FormStage";
-import { Modal } from "../Modal";
-import { EnhancedRandomNameGenerator } from "../EnhancedRandomNameGenerator";
-import traitsData from "../../data/traits.json";
+import { FormStage } from "@/app/components/character-stages/FormStage";
+import { Modal } from "@/app/components/_common/Modal";
+import { EnhancedRandomNameGenerator } from "@/app/components/name-generation/EnhancedRandomNameGenerator";
+import traitsData from "@/app/data/traits.json";
 
 type TraitsStageProps = {
   traits: string[];

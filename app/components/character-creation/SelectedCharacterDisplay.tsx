@@ -1,5 +1,5 @@
 import React from 'react';
-import traitsData from "../data/traits.json";
+import traitsData from "@/app/data/traits.json";
 
 function parseAncestryEffect(effect: string): { [key: string]: number } {
   // Simple parser for effects like "STR+1, HP+2"
