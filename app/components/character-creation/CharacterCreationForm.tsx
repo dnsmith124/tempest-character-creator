@@ -8,7 +8,7 @@ import { SkillsStage } from "@/app/components/character-stages/SkillsStage";
 import { KitStage } from "@/app/components/character-stages/KitStage";
 import { AbilitiesStage } from "@/app/components/character-stages/AbilitiesStage";
 import { TraitsStage } from "@/app/components/character-stages/TraitsStage";
-import { ConfirmDeletePrompt } from "@/app/components/_common/ConfirmDeletePrompt";
+import { CharacterList } from "@/app/components/character-creation/CharacterList";
 import debounce from "lodash.debounce";
 import kits from "@/app/data/kits.json";
 import backgrounds from "@/app/data/backgrounds.json";
@@ -369,58 +369,20 @@ export const CharacterCreationForm = ({ onCharacterCreated }: CharacterCreationF
     <div className="min-h-screen bg-zinc-900 py-8">
       <div className="w-full flex flex-col md:flex-row gap-8 items-start justify-center">
         {/* Character List Section */}
-        <div className="flex-1 max-w-xs w-full p-6 bg-gray-50 dark:bg-zinc-800 rounded shadow mt-4 md:mt-0 overflow-y-auto">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-bold text-gray-500 dark:text-zinc-300">Saved Characters</h2>
-            <div className="flex gap-2 flex-wrap justify-end">
-              <button
-                className="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-                onClick={startNewCharacter}
-                disabled={false}
-              >
-                Create
-              </button>
-              <button
-                className="px-3 py-1 rounded bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
-                onClick={() => { setSelectedCharacterIdx(null); }}
-                disabled={!creationStateRef.current || selectedCharacterIdx === null}
-              >
-                Resume
-              </button>
-            </div>
-          </div>
-          {characters.length === 0 && <div className="text-gray-400">No characters yet.</div>}
-          <ul className="space-y-3">
-            {characters.map((char, idx) => (
-              <li
-                key={char.created || idx}
-                className={`p-3 rounded border bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-700 relative group cursor-pointer ${selectedCharacterIdx === idx ? 'ring-2 ring-blue-400' : ''}`}
-                onClick={() => { setSelectedCharacterIdx(idx); }}
-              >
-                <button
-                  className="absolute top-2 right-2 text-red-500 hover:text-red-700 text-lg font-bold opacity-80 hover:opacity-100 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
-                  aria-label="Delete character"
-                  onClick={e => { e.stopPropagation(); setDeleteIdx(idx); }}
-                  disabled={false}
-                >
-                  ×
-                </button>
-                <div className="font-bold text-blue-700 dark:text-blue-300">{char.name || <span className="text-gray-400">(no name)</span>}</div>
-                <div className="text-sm text-gray-600 dark:text-zinc-300">{char.ancestry || <span className="text-gray-400">(no ancestry)</span>}</div>
-                <div className="text-sm text-gray-600 dark:text-zinc-300">{char.background || <span className="text-gray-400">(no background)</span>}</div>
-              </li>
-            ))}
-          </ul>
-          <ConfirmDeletePrompt
-            open={deleteIdx !== null}
-            onCancel={() => setDeleteIdx(null)}
-            onConfirm={() => deleteIdx !== null && handleDelete(deleteIdx)}
-            characterName={deleteIdx !== null && characters[deleteIdx] ? characters[deleteIdx].name : "this character"}
-          />
-        </div>
+        <CharacterList
+          characters={characters}
+          selectedCharacterIdx={selectedCharacterIdx}
+          deleteIdx={deleteIdx}
+          hasCreationState={!!creationStateRef.current}
+          onSelectCharacter={(idx: number) => setSelectedCharacterIdx(idx)}
+          onDeleteCharacter={(idx: number) => handleDelete(idx)}
+          onSetDeleteIdx={(idx: number | null) => setDeleteIdx(idx)}
+          onStartNewCharacter={startNewCharacter}
+          onResumeCreation={() => { setSelectedCharacterIdx(null); }}
+        />
 
         {/* Center Section: Form or Details or Message */}
-        <div className={`flex-1 mx-auto p-8 bg-zinc-900 rounded shadow flex flex-col gap-6 min-h-[400px] transition-all duration-300 ${selectedCharacterIdx !== null ? 'max-w-4xl' : 'max-w-2xl'}`}>
+        <div className={`flex-1 mx-auto p-8 bg-zinc-900 rounded shadow flex flex-col gap-3 min-h-[400px] transition-all duration-300 ${selectedCharacterIdx !== null ? 'max-w-4xl' : 'max-w-2xl'}`}>
           {selectedCharacterIdx === null && (
             <>
               <h1 className="text-2xl font-bold mb-4 dark:text-zinc-100">Create Your Character</h1>

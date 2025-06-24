@@ -47,7 +47,7 @@ export const CreatureAttributesStage = ({
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {(['STR', 'AGL', 'MND', 'VIG'] as const).map((attr) => (
           <div key={attr} className="bg-zinc-800 border border-zinc-700 rounded-lg p-4">
             <label htmlFor={attr} className="block text-sm font-medium text-zinc-300 mb-2">

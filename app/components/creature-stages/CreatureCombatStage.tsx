@@ -63,7 +63,7 @@ export const CreatureCombatStage = ({
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {/* HP, Armor, Barrier, Movement */}
         <div className="space-y-4">
           <div className="bg-zinc-800 border border-zinc-700 rounded-lg p-4">
